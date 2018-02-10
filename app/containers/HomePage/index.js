@@ -8,6 +8,7 @@ import RoadMap from '../../components/RoadMap/Loadable';
 import MobileRoadMap from '../../components/MobileRoadMap/Loadable';
 import AudioPlayer from '../../components/AudioPlayer/index';
 import SliderComp from '../../components/SliderComp/index';
+import TeamDetails from '../../components/TeamDetails/Loadable';
 import Sale from '../../containers/Sale/Loadable';
 
 import moment from 'moment';
@@ -1206,7 +1207,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                       hideOnOverlayClicked={true}
                       ref={ref => this.teamDialog = ref}
                     >
-                      {/*<TeamDetail member={this.state.member}/>*/}
+                      <TeamDetails member={this.state.member}/>
                     </SkyLight>
                   </div>
                 </div>
@@ -1221,7 +1222,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
 
           <div className="footer">
             <div className="box">
-              <p>&copy; ALL RIGHTS RESERVED BY | SOLUTION TOKEN</p>
+              <p><FormattedMessage {...messages.footer}/></p>
               {/*<a href="https://www.facebook.com/solutiontoken/" target="_blank" className="facebook2">*/}
               {/*<img  className="white" src={require("../../images/facebook_w.png")}/>*/}
               {/*<img className="original" src={require("../../images/facebook.png")}/>*/}

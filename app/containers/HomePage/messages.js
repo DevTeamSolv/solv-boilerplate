@@ -200,6 +200,10 @@ export default defineMessages({
     id: 'app.components.Team.arikDesg',
     defaultMessage: "Web & Graphic Designer",
   },
+  footer: {
+    id: 'app.components.Footer.footer',
+    defaultMessage: "© ALL RIGHTS RESERVED BY | SOLUTION TOKEN",
+  },
 
 
 
