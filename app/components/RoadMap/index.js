@@ -38,11 +38,11 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
               <div className="box">
                 <div className="inner-box active">
                   <div className="data">
-                    <h3>Q1-2018</h3>
-                    <p>Marketing & Whitepaper</p>
+                    <h3><FormattedMessage {...messages.q12018head}/></h3>
+                    <p><FormattedMessage {...messages.q12018title}/></p>
                     <ul>
-                      <li>Completion of documents & marketing strategies</li>
-                      <li>PRE-SALE stage of ICO</li>
+                      <li><FormattedMessage {...messages.q12018l1}/></li>
+                      <li><FormattedMessage {...messages.q12018l2}/></li>
                     </ul>
                   </div>
                   <div className="image">
@@ -56,11 +56,11 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
               <div className="box">
                 <div className="inner-box">
                   <div className="data">
-                    <h3>Q3-2018</h3>
-                    <p>Stage &#8544;&#8544;&#8544; & Solution Key</p>
+                    <h3><FormattedMessage {...messages.q32018head}/></h3>
+                    <p><FormattedMessage {...messages.q32018title}/></p>
                     <ul>
-                      <li>Final stage of ICO</li>
-                      <li>Solution key initiated</li>
+                      <li><FormattedMessage {...messages.q32018l1}/> </li>
+                      <li><FormattedMessage {...messages.q32018l2}/></li>
                     </ul>
                   </div>
                   <div className="image">
@@ -74,10 +74,10 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
               <div className="box">
                 <div className="inner-box">
                   <div className="data">
-                    <h3>Q1-2019</h3>
-                    <p>Operation Humanity</p>
+                    <h3><FormattedMessage {...messages.q12019head}/></h3>
+                    <p><FormattedMessage {...messages.q12019title}/></p>
                     <ul>
-                      <li>Operation Humanity applying platform in real world relief.</li>
+                      <li><FormattedMessage {...messages.q12019l1}/></li>
                     </ul>
                   </div>
                   <div className="image">
@@ -91,11 +91,11 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
               <div className="box">
                 <div className="inner-box">
                   <div className="data">
-                    <h3>Q4-2019</h3>
-                    <p>Gaming</p>
+                    <h3><FormattedMessage {...messages.q42019head}/></h3>
+                    <p><FormattedMessage {...messages.q42019title}/></p>
                     <ul>
-                      <li>Street QRed test demo</li>
-                      <li>Alpha invitations</li>
+                      <li><FormattedMessage {...messages.q42019l1}/></li>
+                      <li><FormattedMessage {...messages.q42019l2}/></li>
                     </ul>
                   </div>
                   <div className="image">
@@ -117,10 +117,10 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
                     <img src={require("../../images/gifs/Ethereum-render.gif")}/>
                   </div>
                   <div className="data">
-                    <h3>Q2-2018</h3>
-                    <p>Stage &#8544; &#8544;&#8544; &#8544;&#8544;&#8544;</p>
+                    <h3><FormattedMessage {...messages.q22018head}/></h3>
+                    <p><FormattedMessage {...messages.q22018title}/></p>
                     <ul>
-                      <li>PRE-SALE Stage &#8544; &#8544;&#8544; &#8544;&#8544;&#8544;</li>
+                      <li><FormattedMessage {...messages.q22018l1}/></li>
                     </ul>
                   </div>
                 </div>
@@ -134,11 +134,11 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
                     <img src={require("../../images/gifs/Reward-logo-Gif.gif")}/>
                   </div>
                   <div className="data">
-                    <h3>Q4-2018</h3>
-                    <p>Solution Wallet</p>
+                    <h3><FormattedMessage {...messages.q42018head}/></h3>
+                    <p><FormattedMessage {...messages.q42018title}/></p>
                     <ul>
-                      <li>Solution Wallet Released</li>
-                      <li>Rewards program implemented</li>
+                      <li><FormattedMessage {...messages.q42018l1}/></li>
+                      <li><FormattedMessage {...messages.q42018l2}/></li>
                     </ul>
                   </div>
                 </div>
@@ -151,11 +151,11 @@ class RoadMap extends React.Component { // eslint-disable-line react/prefer-stat
                   <img src={require("../../images/gifs/Water-Logo-gif.gif")}/>
                 </div>
                   <div className="data">
-                    <h3>Q3-2019</h3>
-                    <p>Water Solutions</p>
+                    <h3><FormattedMessage {...messages.q32019head}/></h3>
+                    <p><FormattedMessage {...messages.q32019title}/></p>
                     <ul>
-                      <li>Registering public company</li>
-                      <li>Distributing products</li>
+                      <li><FormattedMessage {...messages.q32019l1}/></li>
+                      <li><FormattedMessage {...messages.q32019l2}/></li>
                     </ul>
                   </div>
                 </div>
