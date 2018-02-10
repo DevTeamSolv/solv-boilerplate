@@ -7,7 +7,7 @@ import { createStructuredSelector } from 'reselect';
 import CountdownTimer from '../../components/CountdownTimer/Loadable';
 import UniqueSection from '../../components/UniqueSection/Loadable';
 import RoadMap from '../../components/RoadMap/Loadable';
-import MobileRoadMap from '../../components/MobileRoadMap/Loadable';
+import MobileRoadmap from '../../components/MobileRoadmap/Loadable';
 import AudioPlayer from '../../components/AudioPlayer/index';
 import SliderComp from '../../components/SliderComp/index';
 import TeamDetails from '../../components/TeamDetails/Loadable';
@@ -547,7 +547,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                   {/*<img src={require("../../images/mobile-roadmapfinaldave.PNG")}/>*/}
                   {/*</div>*/}
                   <RoadMap />
-                  <MobileRoadMap />
+                  <MobileRoadmap />
                 </div>
               </Element>
               <Element name="whitepaper" className="element">
