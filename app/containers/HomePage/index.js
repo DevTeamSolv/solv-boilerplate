@@ -551,10 +551,10 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                         </div>
                         <div className="column_29">
                           <div id="editable-wrapping-node">
-                            <h3><span >Interactive</span> <span className="span14">Whitepaper</span></h3>
-                            <p>The simplicity of an interactive whitepaper draws the attention to the key aspects of Solution Token. <br/>
-                              <span >This will allow users to both have visual and a virtual experience.&nbsp;</span><br/>
-                              <span className="download-whitepaper"><b>Coming Soon</b></span></p>
+                            <h3><span ><FormattedMessage {...messages.interactive}/></span> <span className="span14"><FormattedMessage {...messages.white}/></span></h3>
+                            <p><FormattedMessage {...messages.simplicity}/><br/>
+                              <span ><FormattedMessage {...messages.allow}/></span><br/>
+                              <span className="download-whitepaper"><b><FormattedMessage {...messages.coming}/></b></span></p>
                             {/*<a className="button" href={require("../../images/gifs/SolutionToken_WP_v1.0.pdf")} download>Download Whitepaper 1.0</a>*/}
                           </div>
                         </div>
@@ -615,7 +615,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                       {/*</div>*/}
                       <div className="column_291">
                         <div id="editable-wrapping-node">
-                          <h3><span >Join Our Community</span> </h3>
+                          <h3><span ><FormattedMessage {...messages.communityHeader}/></span> </h3>
                           <div className="social-boxer">
                             <div className="social">
                               <a href="https://www.facebook.com/groups/251807885358730/" target="_blank" className="social_right_icon">
@@ -626,9 +626,9 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                               </a>
                             </div>
                             <div className="social-data">
-                              <p>Solution Token wishes you to join the community, this will allow you to interact with all team members and founders which you will be able to get to know each and everyone properly through out Solution Token's journey. You will also be able to interact with other members in the community, where you can share ideas and join forces to help each other in projects to come. </p>
-                              <p>We base our community on trust, so here are the platforms that our main community will be based,  follow the facebook link on the left to join our private group and become part of the solution crew, where you can have fun and interact with us and other #SOLVCREW members! Right bellow that you have the discord link where you can join that group for more in depth and technical questions and interaction for you technical wizzes. You can also find our other social media pages bellow!</p>
-                              <p><b>FOLLOW NOW #YouAreTheSolution</b></p>
+                              <p><FormattedMessage {...messages.commP1}/></p>
+                              <p><FormattedMessage {...messages.commP2}/></p>
+                              <p><b><FormattedMessage {...messages.commFollow}/></b></p>
                               <div className="social_box">
                                 <a href="https://www.facebook.com/solutiontoken/" target="_blank" className="sociallink" >
                                   <img title="Facebook Page" src={require("../../images/facebook.png")}/>
@@ -637,30 +637,30 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                                   <img title="Youtube" src={require("../../images/icons/if_youtube_317714.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive" >
-                                  <span className="tooltiptext">We are working on getting this up for you guys, stay tuned for it will be coming soon!</span>
+                                  <span className="tooltiptext"><FormattedMessage {...messages.working}/></span>
                                   <img title="Youtube" src={require("../../images/icons/if_Popular_Social_Media-07_2329236.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive" >
-                                  <span className="tooltiptext">We are working on getting this up for you guys, stay tuned for it will be coming soon!</span>
+                                  <span className="tooltiptext"><FormattedMessage {...messages.working}/></span>
                                   <img title="Discord (Comming Soon)"  src={require("../../images/icons/if_discord_2308078.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive">
-                                  <span className="tooltiptext">We are working on getting this up for you guys, stay tuned for it will be coming soon!</span>
+                                  <span className="tooltiptext"><FormattedMessage {...messages.working}/></span>
                                   <img title="Snapchat (Comming soon)"  src={require("../../images/icons/if_snapchat_386706.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive"  >
-                                  <span className="tooltiptext">We are working on getting this up for you guys, stay tuned for it will be coming soon!</span>
+                                  <span className="tooltiptext"><FormattedMessage {...messages.working}/></span>
                                   <img title="Steemit (Comming Soon)"  src={require("../../images/icons/Layer 1.png")}/>
                                 </a>
                                 <a href="https://twitter.com/solutiontoken" className="sociallink"  >
                                   <img title="Twitter"  src={require("../../images/twitter.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive"  >
-                                  <span className="tooltiptext">We are working on getting this up for you guys, stay tuned for it will be coming soon!</span>
+                                  <span className="tooltiptext"><FormattedMessage {...messages.working}/></span>
                                   <img title="Reddit (Comming Soon)"  src={require("../../images/icons/if_reddit_2308126.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive"  >
-                                  <span className="tooltiptext">We are working on getting this up for you guys, stay tuned for it will be coming soon!</span>
+                                  <span className="tooltiptext"><FormattedMessage {...messages.working}/></span>
                                   <img title="BitcoinTalk (Comming Soon)"  src={require("../../images/icons/Layer 2.png")}/>
                                 </a>
                                 <a href="https://www.linkedin.com/company/solution-token/" className="sociallink" >
@@ -677,8 +677,8 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                     hideOnOverlayClicked={true}
                     ref={ref => this.contact = ref}>
                     <div className="community-popup">
-                      <h3>Join Our Community</h3>
-                      <p>We are working on getting this up for you guys, you can follow us on our other social media instead.
+                      <h3><FormattedMessage {...messages.communityHeader}/></h3>
+                      <p><FormattedMessage {...messages.working}/>
                         <span>
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 866 864">
 <defs>
@@ -698,8 +698,8 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                     <div className="gridContainer row_47">
                       <div className="row_48">
                         <div className="column_36">
-                          <h3>Team Members</h3>
-                          <p>"We are a team, we are a family. This is our whole crew. This was created by bright and passionate individuals who want to change the world for the better."</p>
+                          <h3><FormattedMessage {...messages.teamHeader}/></h3>
+                          <p>"<FormattedMessage {...messages.teamDesc}/>"</p>
                           {/*<a className="button" href="#">Learn more</a>*/}
                         </div>
                       </div>
@@ -715,13 +715,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/ingram.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "andrew")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "andrew")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Andrew Ingram</p>
-                              <p className="designation">CEO & Founder</p>
+                              <p className="designation"><FormattedMessage {...messages.andrewDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -729,13 +729,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/matt.png")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "matthew")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "matthew")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Matthew Wolff</p>
-                              <p className="designation">COO</p>
+                              <p className="designation"><FormattedMessage {...messages.mattDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -743,13 +743,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/David.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "david")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "david")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">David Casciato</p>
-                              <p className="designation">Humanitarian Director</p>
+                              <p className="designation"><FormattedMessage {...messages.daveDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -757,13 +757,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Micheal.png")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "mike")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "mike")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Michael Gogarty</p>
-                              <p className="designation">Communications Manager</p>
+                              <p className="designation"><FormattedMessage {...messages.mikeDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -773,13 +773,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/mahar_husnain.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "mahar")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "mahar")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Mahar Husnain</p>
-                              <p className="designation">CTO</p>
+                              <p className="designation"><FormattedMessage {...messages.maharDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -787,13 +787,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/ali_Zain.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "zain")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "zain")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Ali Zain</p>
-                              <p className="designation">Head Developer</p>
+                              <p className="designation"><FormattedMessage {...messages.aliDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -801,13 +801,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/has.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "hassan")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "hassan")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr className="hassan"/>
                             <div className="hassan info">
                               <p className="name">Tauqeer Hassan</p>
-                              <p className="designation">FrontEnd Engineer</p>
+                              <p className="designation"><FormattedMessage {...messages.hassanDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -815,13 +815,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Joshua L.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "legaspi")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "legaspi")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Joshua Legaspi</p>
-                              <p className="designation">Lead Graphics</p>
+                              <p className="designation"><FormattedMessage {...messages.joshDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -832,7 +832,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Dean_James.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "dean")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "dean")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
@@ -846,13 +846,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/new-sean.png")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "sean")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "sean")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Sean Gallagher</p>
-                              <p className="designation">Chief Editor</p>
+                              <p className="designation"><FormattedMessage {...messages.seanDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -860,13 +860,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/eli-1.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "eli")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "eli")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Eli Karadsheh</p>
-                              <p className="designation">Social Media Manager</p>
+                              <p className="designation"><FormattedMessage {...messages.eliDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -874,13 +874,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/SOLV PROFILES 005.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "daniel")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "daniel")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Daniel Faraj</p>
-                              <p className="designation">Digital Media Manager</p>
+                              <p className="designation"><FormattedMessage {...messages.danielDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -891,13 +891,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/James fawk.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "james")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">James Fawke</p>
-                              <p className="designation">Public Relations Australia</p>
+                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/> Australia</p>
                             </div>
                           </div>
                         </div>
@@ -905,13 +905,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Arik.jpg")}/>
                             <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "arik")}>BIO</a>
+                              <a onClick={this.handleDetails.bind(this, "arik")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <hr/>
                             <div className="info">
                               <p className="name">Arik Balolong</p>
-                              <p className="designation">Web & Graphic Designer</p>
+                              <p className="designation"><FormattedMessage {...messages.arikDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -925,7 +925,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                          <hr/>
                          <div className="info">
                          <p className="name">Joshua Julia</p>
-                         <p className="designation">Public Relations America</p>
+                         <p className="designation"><FormattedMessage {...messages.jamesDesg}/> America</p>
                          </div>
                          </div>
                          </div>*/}
@@ -956,13 +956,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/ingram.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "andrew")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "andrew")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Andrew Ingram</p>
-                                <p className="designation">CEO & Founder</p>
+                                <p className="designation"><FormattedMessage {...messages.andrewDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -970,13 +970,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/matt.png")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "matthew")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "matthew")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Matthew Wolff</p>
-                                <p className="designation">COO</p>
+                                <p className="designation"><FormattedMessage {...messages.mattDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -986,13 +986,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/David.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "david")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "david")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">David Casciato</p>
-                                <p className="designation">Humanitarian Director</p>
+                                <p className="designation"><FormattedMessage {...messages.daveDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1000,13 +1000,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/Micheal.png")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "mike")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "mike")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Michael Gogarty</p>
-                                <p className="designation">Communications Manager</p>
+                                <p className="designation"><FormattedMessage {...messages.mikeDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1016,13 +1016,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/mahar_husnain.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "mahar")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "mahar")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Mahar Husnain</p>
-                                <p className="designation">CTO</p>
+                                <p className="designation"><FormattedMessage {...messages.maharDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1030,13 +1030,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/ali_Zain.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "zain")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "zain")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Ali Zain</p>
-                                <p className="designation">Head Developer</p>
+                                <p className="designation"><FormattedMessage {...messages.aliDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1047,13 +1047,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/has.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "hassan")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "hassan")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr className="hassan"/>
                               <div className="hassan info">
                                 <p className="name">Tauqeer Hassan</p>
-                                <p className="designation">Front - End Engineer</p>
+                                <p className="designation"><FormattedMessage {...messages.hassanDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1061,13 +1061,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/Joshua L.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "legaspi")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "legaspi")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Joshua Legaspi</p>
-                                <p className="designation">Lead Graphics</p>
+                                <p className="designation"><FormattedMessage {...messages.joshDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1077,7 +1077,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/Dean_James.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "dean")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "dean")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
@@ -1092,13 +1092,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/new-sean.png")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "sean")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "sean")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Sean Gallagher</p>
-                                <p className="designation">Chief Editor</p>
+                                <p className="designation"><FormattedMessage {...messages.seanDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1109,13 +1109,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/eli-1.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "eli")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "eli")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Eli Karadsheh</p>
-                                <p className="designation">Social Media Manager</p>
+                                <p className="designation"><FormattedMessage {...messages.eliDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1123,13 +1123,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/SOLV PROFILES 005.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "daniel")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "daniel")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Daniel Faraj</p>
-                                <p className="designation">Digital Media Manager</p>
+                                <p className="designation"><FormattedMessage {...messages.danielDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1140,13 +1140,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/James fawk.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "james")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">James Fawke</p>
-                                <p className="designation">Public Relations</p>
+                                <p className="designation"><FormattedMessage {...messages.jamesDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1157,13 +1157,13 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/Arik.jpg")}/>
                               <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "arik")}>BIO</a>
+                                <a onClick={this.handleDetails.bind(this, "arik")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
                               </div>
                               <hr/>
                               <div className="info">
                                 <p className="name">Arik Balolong</p>
-                                <p className="designation">Web & Graphic Designer</p>
+                                <p className="designation"><FormattedMessage {...messages.arikDesg}/></p>
                               </div>
                             </div>
                           </div>
@@ -1178,7 +1178,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                            <hr/>
                            <div className="info">
                            <p className="name">Joshua Julia</p>
-                           <p className="designation">Public Relations America</p>
+                           <p className="designation"><FormattedMessage {...messages.jamesDesg}/> America</p>
                            </div>
                            </div>
                            </div>*/}

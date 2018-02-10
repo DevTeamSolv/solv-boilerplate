@@ -85,6 +85,123 @@ export default defineMessages({
   },
 
 
+  interactive: {
+    id: 'app.components.Whitepaper.interactive',
+    defaultMessage: 'Interactive',
+  },
+  white: {
+    id: 'app.components.Whitepaper.white',
+    defaultMessage: 'Whitepaper',
+  },
+  simplicity: {
+    id: 'app.components.Whitepaper.simplicity',
+    defaultMessage: 'The simplicity of an interactive whitepaper draws the attention to the key aspects of Solution Token. ',
+  },
+  allow: {
+    id: 'app.components.Whitepaper.allow',
+    defaultMessage: 'This will allow users to both have visual and a virtual experience.&nbsp;',
+  },
+  coming: {
+    id: 'app.components.Whitepaper.coming',
+    defaultMessage: 'Coming Soon',
+  },
+
+  communityHeader: {
+    id: 'app.components.community.Header',
+    defaultMessage: 'Join Our Community',
+  },
+  commP1: {
+    id: 'app.components.community.commP1',
+    defaultMessage: "Solution Token wishes you to join the community, this will allow you to interact with all team members and founders which you will be able to get to know each and everyone properly through out Solution Token's journey. You will also be able to interact with other members in the community, where you can share ideas and join forces to help each other in projects to come.",
+  },
+  commP2: {
+    id: 'app.components.community.commP2',
+    defaultMessage: 'We base our community on trust, so here are the platforms that our main community will be based, follow the facebook link on the left to join our private group and become part of the solution crew, where you can have fun and interact with us and other #SOLVCREW members! Right bellow that you have the discord link where you can join that group for more in depth and technical questions and interaction for you technical wizzes. You can also find our other social media pages bellow!',
+  },
+  commFollow: {
+    id: 'app.components.community.follow',
+    defaultMessage: 'FOLLOW NOW #YouAreTheSolution',
+  },
+  working: {
+    id: 'app.components.community.working',
+    defaultMessage: 'We are working on getting this up for you guys, stay tuned for it will be coming soon!',
+  },
+
+
+  teamHeader: {
+    id: 'app.components.Team.Header',
+    defaultMessage: 'Our Team',
+  },
+  teamDesc: {
+    id: 'app.components.Team.teamDesc',
+    defaultMessage: "We are a team, we are a family. This is our whole crew. This was created by bright and passionate individuals who want to change the world for the better.",
+  },
+  bio: {
+    id: 'app.components.Team.bio',
+    defaultMessage: "BIO",
+  },
+
+  andrewDesg: {
+    id: 'app.components.Team.andrewDesg',
+    defaultMessage: "CEO & Founder",
+  },
+  mattDesg: {
+    id: 'app.components.Team.mattDesg',
+    defaultMessage: "COO",
+  },
+  daveDesg: {
+    id: 'app.components.Team.daveDesg',
+    defaultMessage: "Humanitarian Director",
+  },
+  mikeDesg: {
+    id: 'app.components.Team.mikeDesg',
+    defaultMessage: "Communications Manager",
+  },
+
+  maharDesg: {
+    id: 'app.components.Team.maharDesg',
+    defaultMessage: "CTO",
+  },
+  aliDesg: {
+    id: 'app.components.Team.aliDesg',
+    defaultMessage: "Head Developer",
+  },
+  hassanDesg: {
+    id: 'app.components.Team.hassanDesg',
+    defaultMessage: "FrontEnd Engineer",
+  },
+  anaamDesg: {
+    id: 'app.components.Team.anaamDesg',
+    defaultMessage: "BIO",
+  },
+
+  joshDesg: {
+    id: 'app.components.Team.joshDesg',
+    defaultMessage: "Lead Graphics",
+  },
+  seanDesg: {
+    id: 'app.components.Team.seanDesg',
+    defaultMessage: "Chief Editor",
+  },
+  eliDesg: {
+    id: 'app.components.Team.eliDesg',
+    defaultMessage: "Social Media Manager",
+  },
+  danielDesg: {
+    id: 'app.components.Team.danielDesg',
+    defaultMessage: "Digital Media Manager",
+  },
+
+  jamesDesg: {
+    id: 'app.components.Team.jamesDesg',
+    defaultMessage: "Public Relations Australia",
+  },
+  arikDesg: {
+    id: 'app.components.Team.arikDesg',
+    defaultMessage: "Web & Graphic Designer",
+  },
+
+
 
 
 

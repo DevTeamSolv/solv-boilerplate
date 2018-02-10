@@ -72,13 +72,13 @@ export class Sale extends React.Component { // eslint-disable-line react/prefer-
     // console.log(this.circle.play)
     return (
       <div className="section row_38" data-section-name="sale" data-tooltip="Token Sale" data-arrow="#ffffff" data-id="sale" data-anchor="sale">
-        <h3>Token Sale</h3>
+        <h3><FormattedMessage {...messages.header}/></h3>
         <div className="full_row_6 full_row_type_fs_t3 row_41">
           <div className="inner">
 
             <div className="slider-calc">
               <div className="data">
-                <p className="presale-heading">Pre Sale Coming Soon</p>
+                <p className="presale-heading"><FormattedMessage {...messages.coming}/></p>
                 <div className="inner-data">
                   <p>1 <span className="solv">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1351 1351.031">
@@ -110,7 +110,7 @@ export class Sale extends React.Component { // eslint-disable-line react/prefer-
                                 </span></p>
                 </div>
               </div>
-              <a className="button-sale" href="#">Join The Solution</a>
+              <a className="button-sale" href="#"><FormattedMessage {...messages.join}/></a>
             </div>
 
             <div className="slider-part">

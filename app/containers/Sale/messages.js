@@ -8,6 +8,14 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'app.containers.Sale.header',
-    defaultMessage: 'This is Sale container !',
+    defaultMessage: 'Token Sale',
+  },
+  coming: {
+    id: 'app.containers.Sale.coming',
+    defaultMessage: 'Presale Coming Soon',
+  },
+  join: {
+    id: 'app.containers.Sale.join',
+    defaultMessage: 'Join The Solution',
   },
 });
