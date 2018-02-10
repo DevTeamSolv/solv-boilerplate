@@ -28,7 +28,7 @@ import './js/includes/FlexiMenus2/CSSMenu_DWFullScreenPage1menualt.css';
 import './css/HoverFX.css';
 import './css/main.css';
 import './css/media-main.css';
-// import "./js/afterLoading";
+import "./js/afterLoading";
 // Import root app
 import App from 'containers/App';
 
@@ -94,6 +94,7 @@ if (!window.Intl) {
   }))
     .then(() => Promise.all([
       import('intl/locale-data/jsonp/en.js'),
+      import('intl/locale-data/jsonp/zh.js'),
     ]))
     .then(() => render(translationMessages))
     .catch((err) => {

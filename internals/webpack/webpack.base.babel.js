@@ -42,9 +42,21 @@ module.exports = (options) => ({
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(eot|svg|otf|ttf|woff|woff2)$/,
+        test: /\.mp3$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.(eot|svg|otf|ttf|woff|woff2|mp3)$/,
         use: 'file-loader',
       },
+      // {
+      //   test: /\.(png|jpg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //     }
+      //   ]
+      // },
       {
         test: /\.(jpg|png|gif)$/,
         use: [
@@ -79,7 +91,7 @@ module.exports = (options) => ({
             limit: 10000,
           },
         },
-      },
+      }
     ],
   },
   plugins: options.plugins.concat([
