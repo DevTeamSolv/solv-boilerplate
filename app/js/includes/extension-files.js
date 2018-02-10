@@ -1,0 +1,1 @@
+{"DWFullScreenPage":{"ignoreFiles":["font-awesome"],"readonlyFiles":[],"className":"DWFullScreenPage"}}

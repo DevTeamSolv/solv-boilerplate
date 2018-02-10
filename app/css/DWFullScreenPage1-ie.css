@@ -1,0 +1,231 @@
+/* lte IE 9 style*/
+.fp-arrow {
+	-pie-background: rgba(0, 0, 0, 0);
+	border-radius: 50px;
+	position: relative;
+}
+
+#fp-nav a span {
+	border-radius: 50%;
+	position: relative;
+}
+
+#fp-nav li a:hover span {
+	-pie-background: rgba(255, 255, 255, 0);
+	position: relative;
+}
+
+#fp-nav li a span {
+	position: relative;
+}
+
+#fp-nav li a.active span {
+	-pie-background: rgba(51, 51, 51, 0);
+	position: relative;
+}
+
+#fp-nav .fp-tooltip {
+	border-radius: 20px;
+	position: relative;
+}
+
+.map_content {
+	-pie-background: rgb(238, 238, 238) url("../includes/DWFullScreenPage/DWFullScreenPage1/gmaps.png") no-repeat scroll center center ;
+	position: relative;
+}
+
+.row_38 {
+	-pie-background: rgb(171, 171, 171) url("../includes/DWFullScreenPage/DWFullScreenPage1/tokenbg.png") scroll ;
+}
+
+.row_31 {
+	-pie-background: rgba(255, 255, 255, 0);
+	position: relative;
+}
+
+a.button-white {
+	border-radius: 100px;
+	position: relative;
+}
+
+a.button-white:hover {
+	-pie-background: rgba(255, 255, 255, .4);
+	position: relative;
+}
+
+a.button-white {
+	position: relative;
+}
+
+a.button-white:active {
+	position: relative;
+}
+
+a.button-white {
+	position: relative;
+}
+
+.row_30 {
+}
+
+.row_57 {
+	-pie-background: rgba(33, 205, 153, .7);
+	position: relative;
+}
+
+img.image-field1, img.image-field2 {
+	border-radius: 100px;
+	position: relative;
+}
+
+.testimonials-content-inner1 {
+	color: undefined;
+	position: relative;
+}
+
+#testimonials1 .owl-page span {
+	-pie-background: rgba(0, 0, 0, .5);
+	position: relative;
+}
+
+#testimonials1 .owl-prev {
+	border-radius: 0px;
+	position: relative;
+}
+
+#testimonials1 .owl-next {
+	-pie-background: rgba(210, 211, 212, .5);
+	border-radius: 0px;
+	position: relative;
+}
+
+.row_30:before {
+	-pie-background: rgba(0, 0, 0, 0.57);
+	position: relative;
+}
+
+.sidebar_social1 .facebook1 {
+	-pie-background: transparent url("../favico/xtd_facebook.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .facebook1:hover {
+	-pie-background: transparent url("../favico/xtd_facebook_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .facebook1 {
+	position: relative;
+}
+
+.sidebar_social1 .facebook1:active {
+	-pie-background: transparent url("../favico/xtd_facebook_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .facebook1 {
+	position: relative;
+}
+
+.sidebar_social1 .twitter1 {
+	-pie-background: transparent url("../favico/xtd_twitter.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .twitter1:hover {
+	-pie-background: transparent url("../favico/xtd_twitter_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .twitter1 {
+	position: relative;
+}
+
+.sidebar_social1 .twitter1:active {
+	-pie-background: transparent url("../favico/xtd_twitter_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .twitter1 {
+	position: relative;
+}
+
+.sidebar_social1 .googleplus1 {
+	-pie-background: transparent url("../favico/xtd_googleplus.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .googleplus1:hover {
+	-pie-background: transparent url("../favico/xtd_googleplus_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .googleplus1 {
+	position: relative;
+}
+
+.sidebar_social1 .googleplus1:active {
+	-pie-background: transparent url("../favico/xtd_googleplus_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .googleplus1 {
+	position: relative;
+}
+
+.sidebar_social1 .pinterest1 {
+	-pie-background: transparent url("../favico/xtd_pinterest.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .pinterest1:hover {
+	-pie-background: transparent url("../favico/xtd_pinterest_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .pinterest1 {
+	position: relative;
+}
+
+.sidebar_social1 .pinterest1:active {
+	-pie-background: transparent url("../favico/xtd_pinterest_over.png") no-repeat scroll left top ;
+	position: relative;
+}
+
+.sidebar_social1 .pinterest1 {
+	position: relative;
+}
+
+.row_38:before {
+	-pie-background: rgba(0, 0, 0, 0.62);
+	position: relative;
+}
+
+a.steem2:hover {
+	-pie-background: transparent url("../favico/xtd_steemit_over.png") scroll ;
+	position: relative;
+}
+
+a.steem2 {
+	position: relative;
+}
+
+a.slack2:hover {
+	-pie-background: transparent url("../favico/xtd_slack_over.png") scroll ;
+	position: relative;
+}
+
+a.slack2 {
+	position: relative;
+}
+
+a.btc2:hover {
+	-pie-background: transparent url("../favico/xtd_btc_over.png") scroll ;
+	position: relative;
+}
+
+a.btc2 {
+	position: relative;
+}
+
+@media only screen and (min-width : 768px) { }@media only screen and (min-width : 1024px) { }

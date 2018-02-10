@@ -1,0 +1,86 @@
+/* lte IE 9 style*/
+.contentswap-effect .swap-button button {
+	-pie-background: rgb(96, 92, 168) none scroll ;
+	border-radius: 3px;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button:hover {
+	-pie-background: rgb(64, 60, 120) none scroll ;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button {
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-2 {
+	-pie-background: rgb(50, 123, 239) none scroll ;
+	border-radius: 2px;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-2:hover {
+	-pie-background: rgb(45, 113, 238) none scroll ;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-2 {
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-4 {
+	-pie-background: rgb(182, 214, 68) none scroll ;
+	border-radius: 22px;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-4:hover {
+	-pie-background: rgb(108, 162, 60) none scroll ;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-4 {
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-6 {
+	-pie-background: rgb(159, 220, 34) none scroll ;
+	border-radius: 5px;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-6:hover {
+	-pie-background: rgb(147, 204, 30) none scroll ;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-6 {
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-9 {
+	-pie-background: transparent none scroll ;
+	border-radius: 0;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-10 {
+	-pie-background: rgb(255, 255, 255) none scroll ;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-10:hover {
+	-pie-background: rgb(69, 72, 77) none scroll ;
+	position: relative;
+}
+
+.contentswap-effect .swap-button button.button-10 {
+	position: relative;
+}
+
+.contentswap-effect .swap-inner {
+	-pie-background: transparent none scroll ;
+	position: relative;
+}
+

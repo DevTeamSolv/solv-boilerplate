@@ -1,0 +1,51 @@
+/* lte IE 9 style*/
+.xtd-mobile-caption-title {
+	color: #FFFFFF;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-hide-sel-frame {
+	-pie-background: transparent none scroll ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-frame {
+	-pie-background: rgb(255, 255, 255) none scroll ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-outer {
+	-pie-background: rgb(255, 255, 255) none scroll ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-close {
+	-pie-background: transparent url('../favico/gallery_lightbox/fancybox.png') scroll -40px 0px ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-left, div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-right {
+	-pie-background: transparent url('../favico/gallery_lightbox/blank.gif') scroll ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] .fancybox-title-inside {
+	-pie-background: rgb(255, 255, 255) none scroll ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-title-float-left {
+	-pie-background: transparent url('../favico/gallery_lightbox/fancybox.png') no-repeat scroll -40px -90px ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-title-float-main {
+	-pie-background: transparent url('../favico/gallery_lightbox/fancybox-x.png') scroll 0px -40px ;
+	position: relative;
+}
+
+div[class^="LinkLightBox_"], div[class*="LinkLightBox_"] #fancybox-title-float-right {
+	-pie-background: transparent url('../favico/gallery_lightbox/fancybox.png') no-repeat scroll -55px -90px ;
+	position: relative;
+}
+

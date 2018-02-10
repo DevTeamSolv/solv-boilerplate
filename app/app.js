@@ -14,8 +14,21 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
-import 'sanitize.css/sanitize.css';
-
+import './css/reset.css';
+import './js/includes/DWFullScreenPage/jquery.fullpage.css';
+import './font-awesome-4.7.0/css/font-awesome.min.css';
+import './css/animate.css';
+import './css/style.css';
+import './css/community.css'
+import './css/DWFullScreenPage1.css';
+import './css/DWFullScreenPage1-header.css';
+import './css/DWFullScreenPage1-footer.css';
+import './js/includes/FlexiMenus2/CSSMenu_DWFullScreenPage1menu.css';
+import './js/includes/FlexiMenus2/CSSMenu_DWFullScreenPage1menualt.css';
+import './css/HoverFX.css';
+import './css/main.css';
+import './css/media-main.css';
+// import "./js/afterLoading";
 // Import root app
 import App from 'containers/App';
 
@@ -24,15 +37,15 @@ import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-unresolved, import/extensions */
-import '!file-loader?name=[name].[ext]!./images/favicon.ico';
-import '!file-loader?name=[name].[ext]!./images/icon-72x72.png';
-import '!file-loader?name=[name].[ext]!./images/icon-96x96.png';
-import '!file-loader?name=[name].[ext]!./images/icon-128x128.png';
-import '!file-loader?name=[name].[ext]!./images/icon-144x144.png';
-import '!file-loader?name=[name].[ext]!./images/icon-152x152.png';
-import '!file-loader?name=[name].[ext]!./images/icon-192x192.png';
-import '!file-loader?name=[name].[ext]!./images/icon-384x384.png';
-import '!file-loader?name=[name].[ext]!./images/icon-512x512.png';
+import '!file-loader?name=[name].[ext]!./favico/favicon.ico';
+import '!file-loader?name=[name].[ext]!./favico/icon-72x72.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-96x96.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-128x128.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-144x144.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-152x152.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-192x192.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-384x384.png';
+import '!file-loader?name=[name].[ext]!./favico/icon-512x512.png';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */

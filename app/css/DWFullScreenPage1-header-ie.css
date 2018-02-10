@@ -1,0 +1,58 @@
+/* lte IE 9 style*/
+.header {
+	-pie-background: transparent none scroll ;
+	position: relative;
+}
+
+.row_54 {
+	position: relative;
+}
+
+a.button {
+	border-radius: 100px;
+	position: relative;
+}
+
+a.button:hover {
+	-pie-background: rgba(29, 143, 25, 0.4);
+	position: relative;
+}
+
+a.button {
+	position: relative;
+}
+
+a.button:active {
+	position: relative;
+}
+
+a.button {
+	position: relative;
+}
+
+.header {
+	-pie-background: transparent none scroll ;
+	position: relative;
+}
+
+.row_51 {
+	position: relative;
+}
+
+@media only screen and (min-width: 768px) { .row_51 {
+	position: relative;
+}
+
+.row_54 {
+	position: relative;
+}
+
+}@media only screen and (min-width: 1024px) { .row_51 {
+	position: relative;
+}
+
+.row_54 {
+	position: relative;
+}
+
+}
