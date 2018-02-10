@@ -1,6 +1,8 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import CountdownTimer from '../../components/CountdownTimer/Loadable';
 import UniqueSection from '../../components/UniqueSection/Loadable';
@@ -10,7 +12,6 @@ import AudioPlayer from '../../components/AudioPlayer/index';
 import SliderComp from '../../components/SliderComp/index';
 import TeamDetails from '../../components/TeamDetails/Loadable';
 import Sale from '../../containers/Sale/Loadable';
-
 import moment from 'moment';
 import SkyLight from 'react-skylight';
 import $ from "jquery";
@@ -18,7 +19,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import * as Scroll from 'react-scroll';
-
+import {changeLocale} from "../LanguageProvider/actions";
+import {makeSelectLocale} from "../LanguageProvider/selectors";
 let Link       = Scroll.Link;
 let Element    = Scroll.Element;
 let Events     = Scroll.Events;
@@ -26,7 +28,7 @@ let scroll     = Scroll.animateScroll;
 let scrollSpy  = Scroll.scrollSpy;
 
 
-export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
     this.state = {
@@ -249,6 +251,9 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
   handleContact(){
     this.contact.show();
   }
+  changeLocale(locale){
+    this.props.changeLocale(locale);
+  }
   render() {
     var settings = {
       // dots: true,
@@ -275,7 +280,11 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
 
     return (
       <div>
-        {/*<div className="header">*/}
+        <div className="top-langs">
+          <p className={this.props.locale === "en" ? "active" : "" } onClick={this.changeLocale.bind(this, "en")}>English</p>
+          <p className={this.props.locale === "th" ? "active" : "" } onClick={this.changeLocale.bind(this, "th")}>Thai</p>
+          <p className={this.props.locale === "zh" ? "active" : "" } onClick={this.changeLocale.bind(this, "zh")}>Chinese</p>
+        </div>
         <div className={!this.state.hide ? "scrolled animated-scroll fadeIn" : "row_51 animated-scroll"}>
           <div className="top-bar-outer">
             <div className="empty-column">
@@ -1265,3 +1274,16 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     );
   }
 }
+
+
+
+const mapStateToProps = createStructuredSelector({
+  locale: makeSelectLocale(),
+});
+function mapDispatchToProps(dispatch) {
+  return {
+    changeLocale: (val) => dispatch(changeLocale(val))
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

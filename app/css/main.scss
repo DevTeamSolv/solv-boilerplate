@@ -1,3 +1,21 @@
+.top-langs {
+  display: flex;
+  //width: 300px;
+  background-color: #04140a;
+  justify-content: flex-start;
+  p {
+    color: #fff;
+    text-align: left;
+    width: 100px;
+    margin: 0px;
+    cursor: pointer;
+  }
+  p.active {
+    color: #58e02a;
+  }
+}
+
+
 .row_30 {
   height: auto !important;
   //padding-bottom: 100px;
