@@ -110,7 +110,7 @@ class TeamDetails extends React.Component { // eslint-disable-line react/prefer-
           this.props.member === "anaam" &&
           <div>
             <div className="member-img">
-              <img src={require("../../images/team/size-/sample.png")}/>
+              <img src={require("../../images/team/size-/anaam.png")}/>
             </div>
             <p className="name">Anaam Nizami</p>
             <p className="designation"><FormattedMessage {...messages.anaamDesg}/></p>

@@ -67,7 +67,7 @@ export default defineMessages({
   },
   hassanDesc: {
     id: 'app.components.Team.hassanDesc',
-    defaultMessage: "Tauqeer Hassan is a lead FrontEnd and ReactJS developer and Blockchain Enthusiast. Tauqeer Hassan has worked previously on different ICOs and non-Blockchain platforms.",
+    defaultMessage: "Tauqeer Hassan is a lead FrontEnd and ReactJS developer and Blockchain Enthusiast. Hassan has worked previously on different ICOs and non-Blockchain platforms.",
   },
   anaamDesc: {
     id: 'app.components.Team.anaamDesc',
@@ -84,7 +84,7 @@ export default defineMessages({
   },
   eliDesg: {
     id: 'app.components.Team.eliDesg',
-    defaultMessage: "Social Media Manager",
+    defaultMessage: "Analyst & Social Media Manager",
   },
   danielDesg: {
     id: 'app.components.Team.danielDesg',
