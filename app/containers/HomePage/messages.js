@@ -185,7 +185,7 @@ export default defineMessages({
   },
   eliDesg: {
     id: 'app.components.Team.eliDesg',
-    defaultMessage: "Social Media Manager",
+    defaultMessage: "Analyst & Social Media Manager",
   },
   danielDesg: {
     id: 'app.components.Team.danielDesg',

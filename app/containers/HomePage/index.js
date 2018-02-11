@@ -820,7 +820,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                         </div>
                         <div className="member-container">
                           <div className="inner-member-container">
-                            <img src={require("../../images/team/size-/sample.png")}/>
+                            <img src={require("../../images/team/size-/anaam.png")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "anaam")}><FormattedMessage {...messages.bio}/></a>
                               <i className="fa fa-envelope" aria-hidden="true"></i>
@@ -1094,7 +1094,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                           </div>
                           <div className="member-container">
                             <div className="inner-member-container">
-                              <img src={require("../../images/team/size-/sample.png")}/>
+                              <img src={require("../../images/team/size-/anaam.png")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "anaam")}><FormattedMessage {...messages.bio}/></a>
                                 <i className="fa fa-envelope" aria-hidden="true"></i>
