@@ -27,6 +27,8 @@ let Events     = Scroll.Events;
 let scroll     = Scroll.animateScroll;
 let scrollSpy  = Scroll.scrollSpy;
 
+import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SolutionToken_WP_v1.0.pdf';
+
 
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -155,7 +157,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
       // console.log(currLink, currLink.position(), scrollPos)
       // console.log(refElement, refElement.position(), refElement.height())
       if(refElement.position()) {
-        if (refElement.position().top-68 <= scrollPos && refElement.position().top + refElement.height() > scrollPos+68) {
+        if (refElement.position().top-98 <= scrollPos && refElement.position().top + refElement.height() > scrollPos+98) {
           $('.nav-bar a').removeClass("active");
           currLink.addClass("active");
         }
@@ -282,8 +284,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
       <div>
         <div className="top-langs">
           <p className={this.props.locale === "en" ? "active" : "" } onClick={this.changeLocale.bind(this, "en")}>English</p>
-          <p className={this.props.locale === "th" ? "active" : "" } onClick={this.changeLocale.bind(this, "th")}>Thai</p>
-          <p className={this.props.locale === "zh" ? "active" : "" } onClick={this.changeLocale.bind(this, "zh")}>Chinese</p>
+          <p className={this.props.locale === "th" ? "active" : "" } onClick={this.changeLocale.bind(this, "th")}>คนไทย</p>
+          <p className={this.props.locale === "zh" ? "active" : "" } onClick={this.changeLocale.bind(this, "zh")}>中文</p>
         </div>
         <div className={!this.state.hide ? "scrolled animated-scroll fadeIn" : "row_51 animated-scroll"}>
           <div className="top-bar-outer">
@@ -299,11 +301,10 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 <a  onClick={this.scrollTo.bind(this, "team")}  href="#team"><FormattedMessage {...messages.navTeam}/></a>
 
               </div>
-              {/*<div className="join-sale">*/}
-                {/*<a  onClick={this.scrollTo.bind(this, "community")}  href="#community"><FormattedMessage {...messages.navJoin}/></a>*/}
-              {/*</div>*/}
+              <div className="join-sale">
+                <a  onClick={this.scrollTo.bind(this, "community")}  href="#community"><FormattedMessage {...messages.navJoin}/></a>
+              </div>
             </div>
-            {!this.state.hamburgerOpen && <div id="google_translate_element"></div>}
 
             <div onClick={this.handleMusic.bind(this)} className="music-btn">
               {!this.state.muted && <div><img src={require("../../images/size-/new-music.png")}/></div>}
@@ -360,10 +361,6 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 <Link className="test6" to="community" onClick={this.handleMobileMenuClick.bind(this)} spy={true} smooth={true} duration={1500}>
                   <FormattedMessage {...messages.navJoin}/>
                 </Link>
-                {/*<a className="button-white" onClick={this.handleMobileMenuClick.bind(this)} href="#">Join Token Sale</a>*/}
-              </li>
-              <li>
-                {this.state.hamburgerOpen && <div id="google_translate_element"></div>}
                 {/*<a className="button-white" onClick={this.handleMobileMenuClick.bind(this)} href="#">Join Token Sale</a>*/}
               </li>
             </ul>
@@ -562,10 +559,10 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                         <div className="column_29">
                           <div id="editable-wrapping-node">
                             <h3><span ><FormattedMessage {...messages.interactive}/></span> <span className="span14"><FormattedMessage {...messages.white}/></span></h3>
-                            <p><FormattedMessage {...messages.simplicity}/><br/>
+                            <p><span className="lighter"><FormattedMessage {...messages.simplicity}/></span><br/>
                               <span ><FormattedMessage {...messages.allow}/></span><br/>
                               <span className="download-whitepaper"><b><FormattedMessage {...messages.coming}/></b></span></p>
-                            {/*<a className="button" href={require("../../images/gifs/SolutionToken_WP_v1.0.pdf")} download>Download Whitepaper 1.0</a>*/}
+                            <a className="button" href={pdfFile} download>Download Whitepaper 1.0</a>
                           </div>
                         </div>
                       </div>
@@ -823,6 +820,23 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                         </div>
                         <div className="member-container">
                           <div className="inner-member-container">
+                            <img src={require("../../images/team/size-/sample.png")}/>
+                            <div className="links">
+                              <a onClick={this.handleDetails.bind(this, "anaam")}><FormattedMessage {...messages.bio}/></a>
+                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <hr/>
+                            <div className="info">
+                              <p className="name">Anaam Nizami</p>
+                              <p className="designation"><FormattedMessage {...messages.anaamDesg}/></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="members-row">
+                        <div className="member-container">
+                          <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Joshua L.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "legaspi")}><FormattedMessage {...messages.bio}/></a>
@@ -832,23 +846,6 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <div className="info">
                               <p className="name">Joshua Legaspi</p>
                               <p className="designation"><FormattedMessage {...messages.joshDesg}/></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="members-row">
-                        <div className="member-container">
-                          <div className="inner-member-container">
-                            <img src={require("../../images/team/size-/Dean_James.jpg")}/>
-                            <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "dean")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <hr/>
-                            <div className="info">
-                              <p className="name">Dean James</p>
-                              <p className="designation">Marketing Director</p>
                             </div>
                           </div>
                         </div>
@@ -897,6 +894,20 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                       </div>
 
                       <div className="members-row">
+                        <div className="member-container opacity-zero">
+                          <div className="inner-member-container">
+                            <img src={require("../../images/team/size-/James fawk.jpg")}/>
+                            <div className="links">
+                              <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
+                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <hr/>
+                            <div className="info">
+                              <p className="name">James Fawke</p>
+                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/> Australia</p>
+                            </div>
+                          </div>
+                        </div>
                         <div className="member-container">
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/James fawk.jpg")}/>
@@ -912,6 +923,20 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                           </div>
                         </div>
                         <div className="member-container">
+                          <div className="inner-member-container">
+                            <img src={require("../../images/team/size-/Arik.jpg")}/>
+                            <div className="links">
+                              <a onClick={this.handleDetails.bind(this, "arik")}><FormattedMessage {...messages.bio}/></a>
+                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <hr/>
+                            <div className="info">
+                              <p className="name">Arik Balolong</p>
+                              <p className="designation"><FormattedMessage {...messages.arikDesg}/></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="member-container opacity-zero">
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Arik.jpg")}/>
                             <div className="links">
@@ -1069,6 +1094,22 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                           </div>
                           <div className="member-container">
                             <div className="inner-member-container">
+                              <img src={require("../../images/team/size-/sample.png")}/>
+                              <div className="links">
+                                <a onClick={this.handleDetails.bind(this, "anaam")}><FormattedMessage {...messages.bio}/></a>
+                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                              </div>
+                              <hr/>
+                              <div className="info">
+                                <p className="name">Anaam Nizami</p>
+                                <p className="designation"><FormattedMessage {...messages.anaamDesg}/></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="slider-continer">
+                          <div className="member-container">
+                            <div className="inner-member-container">
                               <img src={require("../../images/team/size-/Joshua L.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "legaspi")}><FormattedMessage {...messages.bio}/></a>
@@ -1081,23 +1122,6 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div className="slider-continer">
-                          <div className="member-container">
-                            <div className="inner-member-container">
-                              <img src={require("../../images/team/size-/Dean_James.jpg")}/>
-                              <div className="links">
-                                <a onClick={this.handleDetails.bind(this, "dean")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
-                              </div>
-                              <hr/>
-                              <div className="info">
-                                <p className="name">Dean James</p>
-                                <p className="designation">Marketing Director</p>
-                              </div>
-                            </div>
-                          </div>
-
                           <div className="member-container">
                             <div className="inner-member-container">
                               <img src={require("../../images/team/size-/new-sean.png")}/>
@@ -1177,38 +1201,6 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               </div>
                             </div>
                           </div>
-
-                          {/*<div className="member-container">
-                           <div className="inner-member-container">
-                           <img src={require("../../images/team/size-/sample.png")}/>
-                           <div className="links">
-                           <a onClick={this.handleDetails.bind(this, "joshua")}>BIO</a>
-                           <i className="fa fa-envelope" aria-hidden="true"></i>
-                           </div>
-                           <hr/>
-                           <div className="info">
-                           <p className="name">Joshua Julia</p>
-                           <p className="designation"><FormattedMessage {...messages.jamesDesg}/> America</p>
-                           </div>
-                           </div>
-                           </div>*/}
-                        </div>
-
-                        <div className="slider-continer">
-                          {/*<div className="member-container">
-                           <div className="inner-member-container">
-                           <img src={require("../../images/team/size-/sample.png")}/>
-                           <div className="links">
-                           <a onClick={this.handleDetails.bind(this, "kamil")}>BIO</a>
-                           <i className="fa fa-envelope" aria-hidden="true"></i>
-                           </div>
-                           <hr/>
-                           <div className="info">
-                           <p className="name">Kamil Helou</p>
-                           <p className="designation">Finance Operator</p>
-                           </div>
-                           </div>
-                           </div>*/}
                         </div>
                       </Slider>
                     </div>

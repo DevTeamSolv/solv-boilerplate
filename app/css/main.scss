@@ -251,6 +251,9 @@ button.wallet p {
 .row_31 {
   padding: 140px 0;
   padding-top: 180px;
+  span.lighter span {
+    font-weight: 300;
+  }
   span {
     font-weight: bold;
   }
@@ -572,6 +575,10 @@ button {
     outline: -webkit-focus-ring-color auto 0px;
   }
 }
+
+img.image-field2 {
+  margin: 0px auto;
+}
 .slide-div {
   display: flex;
   overflow: hidden;
@@ -591,6 +598,10 @@ button {
     //transform: translateX(-100%);
   }
 }
+.opacity-zero {
+  opacity: 0;
+  visibility: hidden;
+}
 .row_58 {
   .skylight-dialog {
     //background-image: url("../images/size-/wallpaper-white.jpg");
@@ -605,6 +616,11 @@ button {
     width: 100%;
     p {
       padding: 0px;
+    }
+    .testimonials-content-inner {
+      span {
+        font-size: 22px;
+      }
     }
   }
   .slick-next:before {

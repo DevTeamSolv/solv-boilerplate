@@ -31,6 +31,7 @@ import './css/media-main.css';
 import "./js/afterLoading";
 // Import root app
 import App from 'containers/App';
+import { unregister } from './registerServiceWorker';
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
@@ -38,20 +39,12 @@ import LanguageProvider from 'containers/LanguageProvider';
 // Load the favicon, the manifest.json file and the .htaccess file
 /* eslint-disable import/no-unresolved, import/extensions */
 import '!file-loader?name=[name].[ext]!./favico/favicon.ico';
-import '!file-loader?name=[name].[ext]!./favico/icon-72x72.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-96x96.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-128x128.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-144x144.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-152x152.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-192x192.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-384x384.png';
-import '!file-loader?name=[name].[ext]!./favico/icon-512x512.png';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 import configureStore from './configureStore';
-
+unregister();
 // Import i18n messages
 import { translationMessages } from './i18n';
 

@@ -5,23 +5,8 @@
 */
 
 import React from 'react';
-// import styled from 'styled-components';
 import $ from "jquery";
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
-// require("../../images/musics/BG-music.mp3");
-
-  var x = require("../../images/musics/BG-music.mp3");
-var y = require("../../images/musics/Cloud 9 NCS Release.mp3")
-  require("../../images/musics/Flares NCS Release.mp3"),
-  require("../../images/musics/TRow No Copyright Music.mp3"),
-  require("../../images/musics/Get Your Love.mp3"),
-  require("../../images/musics/Those Nights.mp3"),
-  require("../../images/musics/391 - Everybody NCS Release.mp3"),
-  require("../../images/musics/Happy Days Non - Copyrighted Music.mp3"),
-  require("../../images/musics/You re The Best.mp3")
-  console.log(x, y)
 class AudioPlayer extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   constructor(props){
@@ -33,15 +18,15 @@ class AudioPlayer extends React.Component { // eslint-disable-line react/prefer-
       controlsShow: true,
       paused: true,
       allTracks: [
-        require("../../images/musics/BG-music.mp3"),
-        require("../../images/musics/Cloud 9 NCS Release.mp3"),
-        require("../../images/musics/Flares NCS Release.mp3"),
-        require("../../images/musics/TRow No Copyright Music.mp3"),
-        require("../../images/musics/Get Your Love.mp3"),
-        require("../../images/musics/Those Nights.mp3"),
-        require("../../images/musics/391 - Everybody NCS Release.mp3"),
-        require("../../images/musics/Happy Days Non - Copyrighted Music.mp3"),
-        require("../../images/musics/You re The Best.mp3")
+        require('!file-loader?name=[name].[ext]!../../images/musics/BG-music.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/Cloud 9 NCS Release.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/Flares NCS Release.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/TRow No Copyright Music.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/Get Your Love.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/Those Nights.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/391 - Everybody NCS Release.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/Happy Days Non - Copyrighted Music.mp3'),
+        require('!file-loader?name=[name].[ext]!../../images/musics/You re The Best.mp3'),
       ]
     }
   }
@@ -62,8 +47,8 @@ class AudioPlayer extends React.Component { // eslint-disable-line react/prefer-
     audio.play();
   }
   previous(){
-    if(this.state.currentTrackId >1 ) {
-      console.log(this.state.currentTrackId, "trancID --- PREVIUS")
+    if(this.state.currentTrackId >0 ) {
+      // console.log(this.state.currentTrackId, "trancID --- PREVIUS")
       var audio = document.getElementById('myAudio');
       var prevTID = this.state.currentTrackId;
       this.setState({
@@ -91,7 +76,7 @@ class AudioPlayer extends React.Component { // eslint-disable-line react/prefer-
   }
   pausePlay () {
     var audio = document.getElementById('myAudio');
-    console.log(audio.src)
+    // console.log(audio.src)
     if (audio.paused){
       audio.play();
     }
@@ -118,7 +103,7 @@ class AudioPlayer extends React.Component { // eslint-disable-line react/prefer-
   render() {
     return (
       <div>
-        <audio onEnded={this.handleTrancEnded.bind(this)} src={require("../../images/musics/BG-music.mp3")} autoPlay loop={false} id="myAudio">
+        <audio onEnded={this.handleTrancEnded.bind(this)} src={require('!file-loader?name=[name].[ext]!../../images/musics/BG-music.mp3')} loop={false} id="myAudio">
           <p>If you are reading this, it is because your browser does not support the audio element.</p>
         </audio>
         <div className="audio-controls">

@@ -54,7 +54,7 @@ export default defineMessages({
   },
   anaamDesg: {
     id: 'app.components.Team.anaamDesg',
-    defaultMessage: "BIO",
+    defaultMessage: "Blockchain Engineer",
   },
 
   maharDesc: {
@@ -71,7 +71,7 @@ export default defineMessages({
   },
   anaamDesc: {
     id: 'app.components.Team.anaamDesc',
-    defaultMessage: "BIO",
+    defaultMessage: "Anaam Desc",
   },
 
   joshDesg: {

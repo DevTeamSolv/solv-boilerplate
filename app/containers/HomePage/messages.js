@@ -172,7 +172,7 @@ export default defineMessages({
   },
   anaamDesg: {
     id: 'app.components.Team.anaamDesg',
-    defaultMessage: "BIO",
+    defaultMessage: "Blockchain Engineer",
   },
 
   joshDesg: {
