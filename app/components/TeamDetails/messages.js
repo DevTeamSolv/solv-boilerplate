@@ -110,7 +110,7 @@ export default defineMessages({
 
   jamesDesg: {
     id: 'app.components.Team.jamesDesg',
-    defaultMessage: "Public Relations Australia",
+    defaultMessage: "Public Relations",
   },
   arikDesg: {
     id: 'app.components.Team.arikDesg',

@@ -134,5 +134,9 @@
   "app.components.Team.jamesDesg":"ประชาสัมพันธ์ออสเตรเลีย",
   "app.components.Team.jamesDesc":"ในฐานะผูจ้ ดั การประชาสมั พนั ธข์ อง Solution Token James ทางานรว่ มกบั ทมี งานดา้ นการตลาดและสอ่ื เพอ่ื แจกจา่ ยและเชย่ี วชาญดา้ นวสั ดสุ าหรบั ตลาดอ อสเตรเลยีเขายงัมหีนา้ทใ่ีนการโตต้อบกบัชมุชนออสเตรเลยีโดยตรงและตอบคาถามใดๆ เกย่ี วกบั โซลชู นั",
   "app.components.Team.arikDesg":"นักออกแบบเว็บและกราฟิก",
-  "app.components.Team.arikDesc":"Arik ทางานอยา่ งใกลช้ ดิ กบั นักออกแบบและนักพฒั นาโฆษณาของ Solution Token ในการผลติ กราฟิกและองคป์ ระกอบของเว็บไซตส์ อ่ื ภาพและการตดั สนิ ใจดา้ นการจดั การเฉพ าะกจิ"
+  "app.components.Team.arikDesc":"Arik ทางานอยา่ งใกลช้ ดิ กบั นักออกแบบและนักพฒั นาโฆษณาของ Solution Token ในการผลติ กราฟิกและองคป์ ระกอบของเว็บไซตส์ อ่ื ภาพและการตดั สนิ ใจดา้ นการจดั การเฉพ าะกจิ",
+  "app.components.Footer.footer":"©สงวนลขิ สทิ ธโิ ์ ดย | TOKEN SOLUTION",
+  "app.containers.Sale.header":"Token Sale",
+  "app.containers.Sale.coming":"ขายลว่งหนา้เรว็ๆนี้",
+  "app.containers.Sale.join":"เขา้รว่มชมุ ชนของเรา"
 }

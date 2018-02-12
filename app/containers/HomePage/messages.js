@@ -34,6 +34,14 @@ export default defineMessages({
     id: 'app.components.HomePage.nav.Join',
     defaultMessage: 'Join Community',
   },
+  logIn: {
+    id: 'app.components.HomePage.nav.Join',
+    defaultMessage: 'Log In',
+  },
+  signUp: {
+    id: 'app.components.HomePage.nav.Join',
+    defaultMessage: 'Sign Up',
+  },
 
 
   homeheading: {
@@ -194,7 +202,7 @@ export default defineMessages({
 
   jamesDesg: {
     id: 'app.components.Team.jamesDesg',
-    defaultMessage: "Public Relations Australia",
+    defaultMessage: "Public Relations",
   },
   arikDesg: {
     id: 'app.components.Team.arikDesg',

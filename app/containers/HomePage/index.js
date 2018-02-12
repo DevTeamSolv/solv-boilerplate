@@ -3,6 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import * as router from 'react-router-dom';
 
 import CountdownTimer from '../../components/CountdownTimer/Loadable';
 import UniqueSection from '../../components/UniqueSection/Loadable';
@@ -21,13 +22,13 @@ import "slick-carousel/slick/slick-theme.css";
 import * as Scroll from 'react-scroll';
 import {changeLocale} from "../LanguageProvider/actions";
 import {makeSelectLocale} from "../LanguageProvider/selectors";
+import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SolutionToken_WP_v1.0.pdf';
 let Link       = Scroll.Link;
 let Element    = Scroll.Element;
 let Events     = Scroll.Events;
 let scroll     = Scroll.animateScroll;
 let scrollSpy  = Scroll.scrollSpy;
-
-import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SolutionToken_WP_v1.0.pdf';
+var LINK = router.Link;
 
 
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -286,6 +287,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           <p className={this.props.locale === "en" ? "active" : "" } onClick={this.changeLocale.bind(this, "en")}>English</p>
           <p className={this.props.locale === "th" ? "active" : "" } onClick={this.changeLocale.bind(this, "th")}>คนไทย</p>
           <p className={this.props.locale === "zh" ? "active" : "" } onClick={this.changeLocale.bind(this, "zh")}>中文</p>
+          <p className={this.props.locale === "ja" ? "active" : "" } onClick={this.changeLocale.bind(this, "ja")}>日本語</p>
         </div>
         <div className={!this.state.hide ? "scrolled animated-scroll fadeIn" : "row_51 animated-scroll"}>
           <div className="top-bar-outer">
@@ -299,13 +301,19 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 <a  onClick={this.scrollTo.bind(this, "whitepaper")}  href="#whitepaper"><FormattedMessage {...messages.navWhitepaper}/></a>
                 <a  onClick={this.scrollTo.bind(this, "token-sale")}  href="#token-sale"><FormattedMessage {...messages.navSale}/></a>
                 <a  onClick={this.scrollTo.bind(this, "team")}  href="#team"><FormattedMessage {...messages.navTeam}/></a>
-
               </div>
               <div className="join-sale">
                 <a  onClick={this.scrollTo.bind(this, "community")}  href="#community"><FormattedMessage {...messages.navJoin}/></a>
               </div>
             </div>
-
+          <div className="buttons">
+            <div className="join-sale">
+              <LINK to='signup'><FormattedMessage {...messages.signUp}/></LINK>
+            </div>
+            <div className="join-sale">
+              <LINK to="login"><FormattedMessage {...messages.logIn}/></LINK>
+            </div>
+          </div>
             <div onClick={this.handleMusic.bind(this)} className="music-btn">
               {!this.state.muted && <div><img src={require("../../images/size-/new-music.png")}/></div>}
               {this.state.muted && <div><img src={require("../../images/size-/no-music.png")}/></div>}
@@ -904,7 +912,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <hr/>
                             <div className="info">
                               <p className="name">James Fawke</p>
-                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/> Australia</p>
+                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/></p>
                             </div>
                           </div>
                         </div>
@@ -918,7 +926,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <hr/>
                             <div className="info">
                               <p className="name">James Fawke</p>
-                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/> Australia</p>
+                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/></p>
                             </div>
                           </div>
                         </div>
