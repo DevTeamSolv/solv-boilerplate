@@ -707,11 +707,23 @@ div.FM2_DWFullScreenPage1menu_container {
         justify-content: space-between;
         flex-grow: 4; }
       .scrolled .top-bar-outer .nav-bar .join-sale {
-        flex-grow: 1; }
+        margin-right: 30px; }
         .scrolled .top-bar-outer .nav-bar .join-sale a {
           border: 2px solid #fff;
           padding: 7px 18px;
           border-radius: 100px; }
+        .scrolled .top-bar-outer .nav-bar .join-sale a:hover {
+          background-color: #fff3; }
+    .scrolled .top-bar-outer .buttons {
+      display: flex;
+      justify-content: center; }
+      .scrolled .top-bar-outer .buttons a {
+        border: 2px solid #fff;
+        padding: 7px 18px;
+        border-radius: 100px;
+        margin-right: 30px; }
+      .scrolled .top-bar-outer .buttons a:hover {
+        background-color: #fff3; }
   .scrolled .music-btn {
     display: none !important;
     margin-right: 15px;
