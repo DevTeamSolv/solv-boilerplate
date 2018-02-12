@@ -211,6 +211,7 @@
     font-weight: 300; }
 
 .row_38 {
+  background-image: url("../images/1.jpg");
   padding-top: 360px;
   height: 706px;
   background-size: cover;
@@ -576,7 +577,8 @@ div.FM2_DWFullScreenPage1menu_container {
     display: flex;
     justify-content: space-between; }
     .row_51 .top-bar-outer .empty-column {
-      flex-grow: 1; }
+      display: none;
+      flex-grow: 2; }
     .row_51 .top-bar-outer a {
       text-decoration: none;
       color: #fff;
@@ -589,7 +591,8 @@ div.FM2_DWFullScreenPage1menu_container {
     .row_51 .top-bar-outer .nav-bar {
       display: flex;
       justify-content: space-between;
-      flex-grow: 4; }
+      flex-grow: 5;
+      padding: 0 100px; }
       .row_51 .top-bar-outer .nav-bar .inner-nav {
         display: flex;
         justify-content: space-between;
@@ -598,18 +601,20 @@ div.FM2_DWFullScreenPage1menu_container {
         margin-right: 30px; }
         .row_51 .top-bar-outer .nav-bar .join-sale a {
           border: 2px solid #fff;
-          padding: 7px 18px;
+          padding: 6.5px 16px;
           border-radius: 100px; }
         .row_51 .top-bar-outer .nav-bar .join-sale a:hover {
           background-color: #fff3; }
     .row_51 .top-bar-outer .buttons {
-      display: flex;
-      justify-content: center; }
+      opacity: 0;
+      display: none;
+      justify-content: flex-end;
+      flex-grow: 0; }
       .row_51 .top-bar-outer .buttons a {
         border: 2px solid #fff;
         padding: 7px 18px;
         border-radius: 100px;
-        margin-right: 30px; }
+        margin-right: 25px; }
       .row_51 .top-bar-outer .buttons a:hover {
         background-color: #fff3; }
   .row_51 .music-btn {
@@ -690,7 +695,8 @@ div.FM2_DWFullScreenPage1menu_container {
     display: flex;
     justify-content: space-between; }
     .scrolled .top-bar-outer .empty-column {
-      flex-grow: 1; }
+      flex-grow: 1;
+      display: none; }
     .scrolled .top-bar-outer a {
       cursor: pointer;
       color: #fff;
@@ -701,7 +707,8 @@ div.FM2_DWFullScreenPage1menu_container {
     .scrolled .top-bar-outer .nav-bar {
       display: flex;
       justify-content: space-between;
-      flex-grow: 4; }
+      flex-grow: 4;
+      padding: 0 100px; }
       .scrolled .top-bar-outer .nav-bar .inner-nav {
         display: flex;
         justify-content: space-between;
@@ -715,8 +722,10 @@ div.FM2_DWFullScreenPage1menu_container {
         .scrolled .top-bar-outer .nav-bar .join-sale a:hover {
           background-color: #fff3; }
     .scrolled .top-bar-outer .buttons {
-      display: flex;
-      justify-content: center; }
+      opacity: 0;
+      flex-grow: 0;
+      display: none;
+      justify-content: flex-end; }
       .scrolled .top-bar-outer .buttons a {
         border: 2px solid #fff;
         padding: 7px 18px;
@@ -984,6 +993,10 @@ div.FM2_DWFullScreenPage1menu_container {
           height: 3px;
           background: #FFF;
           transition: .35s; }
+    .overlay ul li.button a {
+      border: 1px solid #fff;
+      border-radius: 50px;
+      padding: 3px; }
 
 video {
   width: 100%;

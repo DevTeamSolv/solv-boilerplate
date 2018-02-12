@@ -215,6 +215,12 @@ p {
     width: 68%;
     padding-top: 34px; }
 
+  .row_51 .buttons, .scrolled .buttons {
+    flex-grow: 0 !important; }
+    .row_51 .buttons a, .scrolled .buttons a {
+      padding: 5px 12px !important;
+      margin-right: 12px !important; }
+
   .row_58 .skylight-dialog {
     top: 34% !important; }
 
@@ -238,6 +244,12 @@ p {
 
   .row_58 .skylight-dialog {
     top: 34% !important; }
+
+  .row_51 .buttons, .scrolled .buttons {
+    flex-grow: 0.3 !important; }
+    .row_51 .buttons a, .scrolled .buttons a {
+      padding: 5px 12px;
+      margin-right: 25px; }
 
   img.image-field2 {
     width: 30%; }
@@ -292,13 +304,9 @@ p {
     padding-top: 15px; }
     .row_51 .top-bar-outer .empty-column {
       flex-grow: 1; }
-    .row_51 .top-bar-outer .join-sale a {
-      padding: 6px 12px; }
 
   .scrolled .top-bar-outer .empty-column {
     flex-grow: 1; }
-  .scrolled .top-bar-outer .join-sale a {
-    padding: 6px 12px; }
 
   .row_51 .top-bar-outer a, .scrolled .top-bar-outer a {
     font-size: 17px;
