@@ -795,12 +795,35 @@ div.FM2_DWFullScreenPage1menu_container {
 }
 #community {
   .community-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     h3 {
       text-align: center;
     }
     p {
       text-align: center;
       color: #000000a6;
+      margin: 0px;
+    }
+  }
+  .SC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      color: #000000a6;
+      margin-top: 20px;
+    }
+    img {
+      margin-top: 20px;
+      width: 75px;
     }
   }
   .skylight-dialog {
