@@ -28,13 +28,45 @@
     <!--counter css-->
     <script src="https://use.fontawesome.com/3484dfabc2.js"></script>
 
+    <style>
+
+      .outer-loader {
+        display: table;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+      }
+
+      .middle-loader {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .inner-loader {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+      }
+      /*#iframe {*/
+      /*display: none;*/
+      /*}*/
+    </style>
   </head>
-  <body>
+  <body style="top: 0px; !important;">
+    <div id="body-inner">
+      <div id="outer-loader" class="outer-loader">
+        <div class="middle-loader">
+          <div class="inner-loader">
+            <img src="images/gifs/loader.gif"/>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Display a message if JS has been disabled on the browser. -->
     <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
 
     <!-- The app hooks into this div -->
-    <div id="app"></div>
+    <div id="app"  style="display:none"></div>
     <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
   </body>
 </html>

@@ -823,7 +823,7 @@ div.FM2_DWFullScreenPage1menu_container {
     }
     img {
       margin-top: 20px;
-      width: 75px;
+      width: 125px;
     }
   }
   .skylight-dialog {
@@ -1940,9 +1940,9 @@ video {
     //transition: all 0.1s linear 0s;
     img {
       width: 90%;
-      -webkit-transition: all 0.3s linear 0s;
-      -o-transition: all 0.3s linear 0s;
-      transition: all 0.3s linear 0s;
+      -webkit-transition: all 0.1s linear 0s;
+      -o-transition: all 0.1s linear 0s;
+      transition: all 0.1s linear 0s;
     }
   }
   a:hover {

@@ -28,10 +28,18 @@ import './js/includes/FlexiMenus2/CSSMenu_DWFullScreenPage1menualt.css';
 import './css/HoverFX.css';
 import './css/main.css';
 import './css/media-main.css';
-import "./js/afterLoading";
+// import "./js/afterLoading";
 // Import root app
 import App from 'containers/App';
 import { unregister } from './registerServiceWorker';
+
+setTimeout(function () {
+  // alert('ab')
+  document.getElementById('iframe').src += '&autoplay=1';
+  document.getElementById('outer-loader').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+}, 10000)
+
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
