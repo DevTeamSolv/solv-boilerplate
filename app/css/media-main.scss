@@ -612,6 +612,7 @@ p {
   }
   .social_box {
     display: inline-block;
+    height: auto;
     img {
       width: 45px !important;
       margin: 10px;
@@ -669,10 +670,38 @@ p {
       .social {
         flex-direction: row;
         justify-content: center;
+        a {
+          height: 80px;
+          margin-bottom: 0px;
+        }
         img {
           width: 70px;
         }
       }
+
+      //.social {
+      //  display: flex;
+      //  justify-content: flex-start;
+      //  flex-direction: column;
+      //  padding-top: 30px;
+      //  a {
+      //    margin: 0px;
+      //    width: 100px;
+      //    margin-bottom: 20px;
+      //    height: 100px;
+      //    img {
+      //      width: 80%;
+      //      -webkit-transition: all 0.2s linear 0s;
+      //      -o-transition: all 0.2s linear 0s;
+      //      transition: all 0.2s linear 0s;
+      //    }
+      //  }
+      //  a:hover {
+      //    img {
+      //      width: 90%;
+      //    }
+      //  }
+      //}
     }
   }
   iframe {

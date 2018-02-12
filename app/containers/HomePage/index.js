@@ -670,20 +670,26 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive"  >
                                   {/*<span className="tooltiptext"><FormattedMessage {...messages.working}/></span>*/}
-                                  <img title="Steemit (Comming Soon)"  src={require("../../images/icons/Layer 1.png")}/>
+                                  <img title="Steemit (Comming Soon)"  src={require("../../images/icons/steem.png")}/>
                                 </a>
                                 <a href="https://twitter.com/solutiontoken" target="_blank" className="sociallink">
                                   <img title="Twitter"  src={require("../../images/twitter.png")}/>
                                 </a>
                                 <a href="https://www.reddit.com/user/SolutionToken/"  target="_blank" className="sociallink"  >
                                   {/*<span className="tooltiptext"><FormattedMessage {...messages.working}/></span>*/}
-                                  <img title="Reddit (Comming Soon)"  src={require("../../images/icons/if_reddit_2308126.png")}/>
+                                  <img title="Reddit"  src={require("../../images/icons/if_reddit_2308126.png")}/>
                                 </a>
                                 <a href="javascript:;" onClick={this.handleContact.bind(this)} className="sociallink sociallink_inactive"  >
                                   <img title="BitcoinTalk (Comming Soon)"  src={require("../../images/icons/Layer 2.png")}/>
                                 </a>
                                 <a target="_blank" href="https://www.linkedin.com/company/solution-token/" className="sociallink" >
                                   <img title="LinkedIn" src={require("../../images/icons/if_square-linkedin_317725.png")}/>
+                                </a>
+                                <a target="_blank" href="https://medium.com/@SolutionToken" className="sociallink" >
+                                  <img title="Medium" src={require("../../images/icons/medium.png")}/>
+                                </a>
+                                <a target="_blank" href="https://t.me/solutiontoken" className="sociallink" >
+                                  <img title="Telegram" src={require("../../images/icons/telegram.png")}/>
                                 </a>
                               </div>
                             </div>
