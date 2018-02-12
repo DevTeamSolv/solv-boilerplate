@@ -14,7 +14,7 @@ import "./css/style.css";
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 import {email, ethAddress, ethAmount, fName, lName, reffCode} from './selectors';
-import {changeAmount, changeCode, changeEmail, changeEthAddress, changeFirstName, changeLastName} from './actions';
+import {changeAmount, changeCode, changeEmail, changeEthAddress, changeFirstName, changeLastName, signUp} from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
@@ -23,6 +23,9 @@ import "antd/lib/button/style/index.css";
 import "antd/lib/icon/style/css.js";
 
 export class SignUpContainer extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  componentDidMount(){
+    this.props.signUp();
+  }
   render() {
     return (
       <div className="sign-up">
@@ -71,7 +74,7 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
                 <div className="checkbox">
                   <input type="checkbox"/><p>Disclaimer bellow should be you understand to follow by rules and regulations within your country, state and territory and have read the whitepaper thoroughly. </p>
                 </div>
-                <Button type="primary">
+                <Button type="primary" onClick={this.props.signUp}>
                   Sign Up
                 </Button>
               </div>
@@ -104,6 +107,7 @@ function mapDispatchToProps(dispatch) {
     changeEthAddress: (evt) => dispatch(changeEthAddress(evt.target.value)),
     changeFirstName: (evt) => dispatch(changeFirstName(evt.target.value)),
     changeLastName: (evt) => dispatch(changeLastName(evt.target.value)),
+    signUp: (evt) => dispatch(signUp()),
   };
 }
 

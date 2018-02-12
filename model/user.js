@@ -1,3 +1,4 @@
+
 //mode/comments.js
 'use strict';
 //import dependency
@@ -7,10 +8,11 @@ var Schema = mongoose.Schema;
 //create new instance of the mongoose.schema. the schema takes an object that shows
 //the shape of your database entries.
 var User = new Schema({
-  user_name: String,
+  first_name: String,
+  last_name: String,
   eth_amount: String,
   eth_address: String,
-  email_address: String,
+  email: String,
   ref_code: String,
 });
 

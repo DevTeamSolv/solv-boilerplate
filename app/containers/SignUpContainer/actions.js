@@ -5,7 +5,7 @@
  */
 
 import {
-  FIRST_NAME,REFF_CODE,LAST_NAME,EMAIL,ETH,AMOUNT
+  FIRST_NAME,REFF_CODE,LAST_NAME,EMAIL,ETH,AMOUNT,SIGN_UP
 } from './constants';
 
 export function changeFirstName(val) {
@@ -44,3 +44,9 @@ export function changeCode(val) {
     val
   };
 }
+export function signUp() {
+  return {
+    type: SIGN_UP,
+  };
+}
+

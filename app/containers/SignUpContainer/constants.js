@@ -10,3 +10,5 @@ export const EMAIL = 'app/SignUpContainer/EMAIL';
 export const ETH = 'app/SignUpContainer/ETH';
 export const AMOUNT = 'app/SignUpContainer/AMOUNT';
 export const REFF_CODE = 'app/SignUpContainer/REFF_CODE';
+
+export const SIGN_UP = 'app/SignUpContainer/SIGN_UP';
