@@ -38,6 +38,7 @@ app.use(bodyParser.json());
 //To prevent errors from Cross Origin Resource Sharing, we will set our headers to allow CORS with middleware like so:
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', 'http://ec2-52-201-203-83.compute-1.amazonaws.com');
+  // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
@@ -50,12 +51,69 @@ app.use(function(req, res, next) {
 //now  we can set the route path & initialize the API
 router.get('/', function(req, res) {
   res.json({ message: 'API Initialized!'});
+  // var x = User.find({ email: 'tauqeer@gmail.com' })
+  // console.log(x)
+  // User.find(function(err, users) {
+  //   if (err)
+  //     res.send(err);
+  //   //responds with a json object of our database comments.
+  //   // if(users.email === "tauqeer@gmail.com" ) {
+  //   users.map(function (user) {
+  //     console.log(typeof(user.email), '-----')
+  //   })
+  //   // console.log()
+  //
+  //     res.json(users)
+  //
+  // });
 });
+
+router.route('/login')
+  .post(function (req, res) {
+
+
+    // console.log(req.body)
+    var user = new User();
+    var message = "";
+    var success = false;
+
+
+    User.find(function(err, users) {
+      var already = false;
+
+      if (err)
+        res.send(err);
+      //responds with a json object of our database comments.
+      // if(users.email === "tauqeer@gmail.com" ) {
+      users.map(function (obj) {
+        if(obj.eth_address === req.body.eth_address && !success) {
+          already = true
+          user = obj;
+          message = "succesful"
+          success = true
+          res.json({ message, success, user });
+        }
+      })
+      //
+      if(!already) {
+        console.log(already, " ----   in");
+          message = 'Invalid!'
+          success = false
+          res.json({ message, success });
+      }
+    });
+
+
+  });
+
+
+
 
 //adding the /comments route to our /api router
 router.route('/users')
 //retrieve all comments from the database
   .get(function(req, res) {
+    // console.log('get in ')
     //looks at our Comment Schema
     User.find(function(err, users) {
       if (err)
@@ -66,19 +124,43 @@ router.route('/users')
   })
   //post new comment to the database
   .post(function(req, res) {
-    console.log(req.body)
+    // console.log(req.body)
     var user = new User();
-    (req.body.first_name) ? user.first_name = req.body.first_name : null;
-    (req.body.last_name) ? user.last_name = req.body.last_name : null;
-    (req.body.email) ? user.email = req.body.email : null;
-    (req.body.eth_address) ? user.eth_address = req.body.eth_address : null;
-    (req.body.eth_amount) ? user.eth_amount = req.body.eth_amount : null;
-    (req.body.ref_code) ? user.ref_code = req.body.ref_code : null;
+    var message = "";
+    var success = false;
 
-    user.save(function(err) {
+
+    User.find(function(err, users) {
+      var already = false;
       if (err)
         res.send(err);
-      res.json({ message: 'Comment successfully added!' });
+      //responds with a json object of our database comments.
+      // if(users.email === "tauqeer@gmail.com" ) {
+      users.map(function (obj) {
+        if(obj.email === req.body.email) {
+          already = true
+          message = "User already registered!"
+          success = false
+          res.json({ message, success });
+        }
+      })
+      //
+      if(!already) {
+        console.log(already, " ----   in");
+        (req.body.first_name) ? user.first_name = req.body.first_name : null;
+        (req.body.last_name) ? user.last_name = req.body.last_name : null;
+        (req.body.email) ? user.email = req.body.email : null;
+        (req.body.eth_address) ? user.eth_address = req.body.eth_address : null;
+        (req.body.eth_amount) ? user.eth_amount = req.body.eth_amount : null;
+        (req.body.ref_code) ? user.ref_code = req.body.ref_code : null;
+        user.save(function(err) {
+          if (err)
+            res.send(err);
+          message = 'User successfully registered!'
+          success = true
+          res.json({ message, success });
+        });
+      }
     });
   });
 

@@ -5,7 +5,7 @@
  */
 
 import {
-  FIRST_NAME,REFF_CODE,LAST_NAME,EMAIL,ETH,AMOUNT,SIGN_UP
+  FIRST_NAME,REFF_CODE,LAST_NAME,EMAIL,ETH,AMOUNT,SIGN_UP, CHANGE_LOADER, SIGN_UP_RES, RESET
 } from './constants';
 
 export function changeFirstName(val) {
@@ -45,8 +45,27 @@ export function changeCode(val) {
   };
 }
 export function signUp() {
+  console.log("calling")
   return {
     type: SIGN_UP,
+  };
+}
+export function changeLoader(val) {
+  return {
+    type: CHANGE_LOADER,
+    val
+  };
+}
+export function signUpResp(val, loading) {
+  return {
+    type: SIGN_UP_RES,
+    val,
+    loading
+  };
+}
+export function reset() {
+  return {
+    type: RESET,
   };
 }
 

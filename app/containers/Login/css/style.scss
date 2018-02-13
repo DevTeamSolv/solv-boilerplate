@@ -1,27 +1,31 @@
-.sign-up {
+.login{
   background-image: url("../../../images/wallpaperbg.png");
   width: 100%;
   padding: 100px;
   background-size: cover;
   background-position: center;
+
   .success {
     //margin: 20% auto !important;
     //margin-top: 20% !important;
     margin-top: 69px !important;
-    img {
-      margin: 0px auto;
-    }
     h3 {
+      text-align: center;
       color: #5dbb46;
-      font-weight: bold;
     }
     h4 {
+      text-align: center;
       //letter-spacing: 1px;
       //word-spacing: 1px;
+      margin: 0px;
       font: normal normal 300 30px/120% Source Sans Pro, sans-serif;
     }
     .success-sign-up {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .timer {
         width: 100%;
         margin-top: 30px;
@@ -59,34 +63,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    max-width: 900px !important;
-    .success-sign-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      p, h3 {
-        margin: 0px !important;
-      }
-      h3 {
-        font-weight: 400;
-        word-spacing: 0;
-        letter-spacing: 0;
-        margin: 20px auto !important;
-      }
-      button {
-        background-color: #5dbb46;
-        color: #fff;
-        border: none;
-        padding: 0 25px;
-        font-size: 18px;
-        height: 45px;
-        border-radius: 50px;
-      }
-      button:hover {
-        background-color: #83d86f !important;
-      }
-    }
+    position: relative ;
+    max-width: 900px;
     img {
       width: 370px;
       margin: 0px auto;
@@ -207,8 +185,7 @@
     border-top-right-radius: 0;
     padding-top: 8px;
     height: 56px;
-    max-width: 700px !important;
-
+    max-width: 700px;
     p {
       margin: 0px !important;
       text-align: center;
@@ -225,14 +202,14 @@
 }
 
 @media only screen and (min-width: 1600px) {
-  .sign-up {
+  .login{
     .container {
       width: 900px !important;
     }
   }
 }
 @media only screen and (min-width: 1400px) {
-  .sign-up {
+  .login{
     .container {
       width: 70% !important;
     }
@@ -242,7 +219,7 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-  .sign-up {
+  .login{
     .success{
       margin-top: 89px ;
     }
@@ -256,7 +233,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .sign-up {
+  .login{
     .container {
       width: 100% !important;
     }
@@ -264,12 +241,10 @@
       width: 70%;
     }
   }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .sign-up {
-
+  .login{
     .success {
       //margin: 20% auto !important;
       //margin-top: 20% !important;
@@ -311,8 +286,7 @@
       }
     }
     .container {
-      width: 100% ;
-
+      width: 100% !important;
       .form{
         .my-row {
           input {
@@ -350,7 +324,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .sign-up {
+  .login{
     padding: 100px 60px;
     .success {
       //margin: 20% auto !important;
@@ -398,9 +372,6 @@
         p {
           text-align: left !important;
         }
-        p.eth-amount {
-          line-height: 1;
-        }
         .my-row {
           width: 390px;
           input {
@@ -438,7 +409,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .sign-up {
+  .login{
     padding: 100px 50px;
 
     .success {
@@ -488,6 +459,7 @@
         width: 300px;
       }
       .form{
+        width: 100% !important;
         margin-top: 30px;
         p {
           text-align: left !important;
@@ -532,7 +504,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .sign-up {
+  .login{
     padding: 100px 35px;
 
     .success {
@@ -585,7 +557,10 @@
     }
     .bottom-last-row {
       width: 80%;
+      padding: 10px 20px;
+      height: auto;
       p {
+        line-height: 1.5;
         text-align: center !important;
       }
     }
@@ -593,7 +568,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .sign-up {
+  .login{
     padding: 100px 30px;
     .success {
       //margin: 20% auto !important;
@@ -648,6 +623,11 @@
       padding: 50px 20px;
       .form {
         margin-top: 20px;
+        .last-row {
+          button {
+            width: 150px;
+          }
+        }
       }
     }
     .bottom-last-row {
@@ -661,7 +641,7 @@
 
 
 @media only screen and (max-width: 350px) {
-  .sign-up {
+  .login{
     padding: 100px 20px;
     .container {
       width: 100% !important;

@@ -23,6 +23,7 @@ import * as Scroll from 'react-scroll';
 import {changeLocale} from "../LanguageProvider/actions";
 import {makeSelectLocale} from "../LanguageProvider/selectors";
 import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SolutionToken_WP_v1.0.pdf';
+
 let Link       = Scroll.Link;
 let Element    = Scroll.Element;
 let Events     = Scroll.Events;

@@ -1,40 +1,44 @@
-.sign-up {
+.login {
   background-image: url("../../../images/wallpaperbg.png");
   width: 100%;
   padding: 100px;
   background-size: cover;
   background-position: center; }
-  .sign-up .success {
+  .login .success {
     margin-top: 69px !important; }
-    .sign-up .success img {
-      margin: 0px auto; }
-    .sign-up .success h3 {
-      color: #5dbb46;
-      font-weight: bold; }
-    .sign-up .success h4 {
+    .login .success h3 {
+      text-align: center;
+      color: #5dbb46; }
+    .login .success h4 {
+      text-align: center;
+      margin: 0px;
       font: normal normal 300 30px/120% Source Sans Pro, sans-serif; }
-    .sign-up .success .success-sign-up {
-      width: 100%; }
-      .sign-up .success .success-sign-up .timer {
+    .login .success .success-sign-up {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .login .success .success-sign-up .timer {
         width: 100%;
         margin-top: 30px; }
-        .sign-up .success .success-sign-up .timer .svg-style {
+        .login .success .success-sign-up .timer .svg-style {
           transform: translate(0px, 0%) rotate(270deg) scale(1.5, 1.5); }
-        .sign-up .success .success-sign-up .timer #ell {
+        .login .success .success-sign-up .timer #ell {
           fill: #77777712 !important;
           stroke: #5dbb46; }
-        .sign-up .success .success-sign-up .timer .time {
+        .login .success .success-sign-up .timer .time {
           font-size: 70px !important;
           line-height: 1 !important;
           text-align: center;
           transform: translate(0px, -120%); }
-        .sign-up .success .success-sign-up .timer .label {
+        .login .success .success-sign-up .timer .label {
           text-align: center;
           transform: translate(0px, -120%); }
-          .sign-up .success .success-sign-up .timer .label span {
+          .login .success .success-sign-up .timer .label span {
             font-size: 24px !important;
             line-height: 1; }
-  .sign-up .container {
+  .login .container {
     background-color: #fff;
     padding: 50px;
     width: 60%;
@@ -45,57 +49,36 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    max-width: 900px !important; }
-    .sign-up .container .success-sign-up {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .sign-up .container .success-sign-up p, .sign-up .container .success-sign-up h3 {
-        margin: 0px !important; }
-      .sign-up .container .success-sign-up h3 {
-        font-weight: 400;
-        word-spacing: 0;
-        letter-spacing: 0;
-        margin: 20px auto !important; }
-      .sign-up .container .success-sign-up button {
-        background-color: #5dbb46;
-        color: #fff;
-        border: none;
-        padding: 0 25px;
-        font-size: 18px;
-        height: 45px;
-        border-radius: 50px; }
-      .sign-up .container .success-sign-up button:hover {
-        background-color: #83d86f !important; }
-    .sign-up .container img {
+    max-width: 900px; }
+    .login .container img {
       width: 370px;
       margin: 0px auto; }
-    .sign-up .container .form {
+    .login .container .form {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 40px; }
-      .sign-up .container .form p, .sign-up .container .form h3 {
+      .login .container .form p, .login .container .form h3 {
         margin: 0px !important; }
-      .sign-up .container .form .my-row {
+      .login .container .form .my-row {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin: 10px 0; }
-        .sign-up .container .form .my-row .my-label {
+        .login .container .form .my-row .my-label {
           margin-bottom: 5px; }
-          .sign-up .container .form .my-row .my-label p {
+          .login .container .form .my-row .my-label p {
             margin: 0px !important;
             font-size: 18px !important;
             color: #5dbb46; }
-          .sign-up .container .form .my-row .my-label span {
+          .login .container .form .my-row .my-label span {
             color: red;
             font-size: 12px;
             opacity: 0; }
-          .sign-up .container .form .my-row .my-label span.opactiy-one {
+          .login .container .form .my-row .my-label span.opactiy-one {
             color: #5dbb46;
             opacity: 1 !important; }
-        .sign-up .container .form .my-row input {
+        .login .container .form .my-row input {
           font: normal normal 19px/normal Source Sans Pro, sans-serif;
           height: 45px;
           width: 450px;
@@ -103,30 +86,30 @@
           border: 1px solid #5dbb46;
           border-radius: 99px;
           text-indent: 25px; }
-        .sign-up .container .form .my-row input::placeholder {
+        .login .container .form .my-row input::placeholder {
           font-weight: 300; }
-      .sign-up .container .form .error p {
+      .login .container .form .error p {
         color: red !important; }
-      .sign-up .container .form .error span {
+      .login .container .form .error span {
         opacity: 1 !important; }
-      .sign-up .container .form .error input {
+      .login .container .form .error input {
         border-color: red !important;
         color: red !important; }
-      .sign-up .container .form .last-row {
+      .login .container .form .last-row {
         width: 450px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 30px; }
-        .sign-up .container .form .last-row .checkbox {
+        .login .container .form .last-row .checkbox {
           display: flex; }
-          .sign-up .container .form .last-row .checkbox p {
+          .login .container .form .last-row .checkbox p {
             color: rgba(0, 0, 0, 0.65);
             font-size: 18px !important; }
-          .sign-up .container .form .last-row .checkbox input {
+          .login .container .form .last-row .checkbox input {
             margin-top: 10px;
             margin-right: 10px; }
-        .sign-up .container .form .last-row button {
+        .login .container .form .last-row button {
           background-color: #5dbb46;
           color: #fff;
           border: none;
@@ -134,19 +117,19 @@
           font-size: 18px;
           height: 45px;
           border-radius: 50px; }
-        .sign-up .container .form .last-row button:hover {
+        .login .container .form .last-row button:hover {
           background-color: #83d86f !important; }
-      .sign-up .container .form .row-1 {
+      .login .container .form .row-1 {
         width: 100%;
         display: flex;
         justify-content: space-between; }
-        .sign-up .container .form .row-1 .my-row1 {
+        .login .container .form .row-1 .my-row1 {
           width: 245px; }
-        .sign-up .container .form .row-1 .my-row2 {
+        .login .container .form .row-1 .my-row2 {
           width: 200px; }
-        .sign-up .container .form .row-1 .my-row input {
+        .login .container .form .row-1 .my-row input {
           width: 200px; }
-  .sign-up .bottom-last-row {
+  .login .bottom-last-row {
     width: 40%;
     margin: 0px auto;
     background: #fff;
@@ -155,294 +138,298 @@
     border-top-right-radius: 0;
     padding-top: 8px;
     height: 56px;
-    max-width: 700px !important; }
-    .sign-up .bottom-last-row p {
+    max-width: 700px; }
+    .login .bottom-last-row p {
       margin: 0px !important;
       text-align: center; }
-      .sign-up .bottom-last-row p a {
+      .login .bottom-last-row p a {
         color: #5dbb46;
         font-weight: 500;
         text-decoration: none; }
-      .sign-up .bottom-last-row p a:hover {
+      .login .bottom-last-row p a:hover {
         color: #83d86f; }
 
 @media only screen and (min-width: 1600px) {
-  .sign-up .container {
+  .login .container {
     width: 900px !important; } }
 @media only screen and (min-width: 1400px) {
-  .sign-up .container {
+  .login .container {
     width: 70% !important; }
-  .sign-up .bottom-last-row {
+  .login .bottom-last-row {
     width: 50%; } }
 @media only screen and (min-width: 1200px) {
-  .sign-up .success {
+  .login .success {
     margin-top: 89px; }
-  .sign-up .container {
+  .login .container {
     width: 90% !important; }
-  .sign-up .bottom-last-row {
+  .login .bottom-last-row {
     width: 60%; } }
 @media only screen and (min-width: 992px) {
-  .sign-up .container {
+  .login .container {
     width: 100% !important; }
-  .sign-up .bottom-last-row {
+  .login .bottom-last-row {
     width: 70%; } }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .sign-up .success h3 {
+  .login .success h3 {
     color: #5dbb46; }
-  .sign-up .success h4 {
+  .login .success h4 {
     font: normal normal 300 30px/120% Source Sans Pro, sans-serif; }
-  .sign-up .success .success-sign-up {
+  .login .success .success-sign-up {
     width: 100%; }
-    .sign-up .success .success-sign-up .timer {
+    .login .success .success-sign-up .timer {
       width: 100%;
       margin-top: 30px; }
-      .sign-up .success .success-sign-up .timer .svg-style {
+      .login .success .success-sign-up .timer .svg-style {
         transform: translate(0px, 0%) rotate(270deg) scale(1.3, 1.3); }
-      .sign-up .success .success-sign-up .timer #ell {
+      .login .success .success-sign-up .timer #ell {
         fill: #77777712 !important;
         stroke: #5dbb46; }
-      .sign-up .success .success-sign-up .timer .time {
+      .login .success .success-sign-up .timer .time {
         font-size: 65px !important;
         line-height: 1;
         text-align: center;
         transform: translate(0px, -124%); }
-      .sign-up .success .success-sign-up .timer .label {
+      .login .success .success-sign-up .timer .label {
         text-align: center;
         transform: translate(0px, -144%); }
-        .sign-up .success .success-sign-up .timer .label span {
+        .login .success .success-sign-up .timer .label span {
           font-size: 23px !important;
           line-height: 0.5 !important; }
-  .sign-up .container {
-    width: 100%; }
-    .sign-up .container .form .my-row input {
+  .login .container {
+    width: 100% !important; }
+    .login .container .form .my-row input {
       width: 390px; }
-    .sign-up .container .form .row-1 {
+    .login .container .form .row-1 {
       width: 390px;
       display: block; }
-      .sign-up .container .form .row-1 .my-row {
+      .login .container .form .row-1 .my-row {
         width: 45%; }
-        .sign-up .container .form .row-1 .my-row input {
+        .login .container .form .row-1 .my-row input {
           width: 100%; }
-      .sign-up .container .form .row-1 .my-row1 {
+      .login .container .form .row-1 .my-row1 {
         float: left; }
-      .sign-up .container .form .row-1 .my-row2 {
+      .login .container .form .row-1 .my-row2 {
         float: right; }
-    .sign-up .container .form .last-row {
+    .login .container .form .last-row {
       width: 390px; }
-      .sign-up .container .form .last-row p {
+      .login .container .form .last-row p {
         text-align: justify; }
-  .sign-up .bottom-last-row {
+  .login .bottom-last-row {
     width: 70%; } }
 @media only screen and (max-width: 767px) {
-  .sign-up {
+  .login {
     padding: 100px 60px; }
-    .sign-up .success h3 {
+    .login .success h3 {
       color: #5dbb46; }
-    .sign-up .success h4 {
+    .login .success h4 {
       font: normal normal 300 30px/120% Source Sans Pro, sans-serif; }
-    .sign-up .success .success-sign-up {
+    .login .success .success-sign-up {
       width: 100%; }
-      .sign-up .success .success-sign-up .timer {
+      .login .success .success-sign-up .timer {
         width: 100%;
         margin-top: 30px; }
-        .sign-up .success .success-sign-up .timer .svg-style {
+        .login .success .success-sign-up .timer .svg-style {
           transform: translate(0px, 0%) rotate(270deg) scale(1.2, 1.2); }
-        .sign-up .success .success-sign-up .timer #ell {
+        .login .success .success-sign-up .timer #ell {
           fill: #77777712 !important;
           stroke: #5dbb46; }
-        .sign-up .success .success-sign-up .timer .time {
+        .login .success .success-sign-up .timer .time {
           font-size: 60px !important;
           line-height: 1;
           text-align: center;
           transform: translate(0px, -130%); }
-        .sign-up .success .success-sign-up .timer .label {
+        .login .success .success-sign-up .timer .label {
           text-align: center;
           transform: translate(0px, -150%); }
-          .sign-up .success .success-sign-up .timer .label span {
+          .login .success .success-sign-up .timer .label span {
             font-size: 21px !important;
             line-height: 0.5 !important; }
-    .sign-up .container {
+    .login .container {
       width: 100% !important; }
-      .sign-up .container .form p {
+      .login .container .form p {
         text-align: left !important; }
-      .sign-up .container .form p.eth-amount {
-        line-height: 1; }
-      .sign-up .container .form .my-row {
+      .login .container .form .my-row {
         width: 390px; }
-        .sign-up .container .form .my-row input {
+        .login .container .form .my-row input {
           width: 100%; }
-      .sign-up .container .form .row-1 {
+      .login .container .form .row-1 {
         width: 390px;
         display: block; }
-        .sign-up .container .form .row-1 .my-row {
+        .login .container .form .row-1 .my-row {
           width: 45%; }
-          .sign-up .container .form .row-1 .my-row input {
+          .login .container .form .row-1 .my-row input {
             width: 100%; }
-        .sign-up .container .form .row-1 .my-row1 {
+        .login .container .form .row-1 .my-row1 {
           float: left; }
-        .sign-up .container .form .row-1 .my-row2 {
+        .login .container .form .row-1 .my-row2 {
           float: right; }
-      .sign-up .container .form .last-row {
+      .login .container .form .last-row {
         width: 390px; }
-        .sign-up .container .form .last-row p {
+        .login .container .form .last-row p {
           text-align: justify !important; }
-    .sign-up .bottom-last-row {
+    .login .bottom-last-row {
       width: 70%; } }
 @media only screen and (max-width: 600px) {
-  .sign-up {
+  .login {
     padding: 100px 50px; }
-    .sign-up .success h3 {
+    .login .success h3 {
       color: #5dbb46; }
-    .sign-up .success h4 {
+    .login .success h4 {
       margin-bottom: 0px;
       font: normal normal 300 30px/120% Source Sans Pro, sans-serif; }
-    .sign-up .success .success-sign-up {
+    .login .success .success-sign-up {
       width: 100%; }
-      .sign-up .success .success-sign-up .timer {
+      .login .success .success-sign-up .timer {
         width: 100%;
         margin-top: 30px; }
-        .sign-up .success .success-sign-up .timer .svg-style {
+        .login .success .success-sign-up .timer .svg-style {
           transform: translate(0px, 0%) rotate(270deg) scale(1, 1); }
-        .sign-up .success .success-sign-up .timer #ell {
+        .login .success .success-sign-up .timer #ell {
           fill: #77777712 !important;
           stroke: #5dbb46; }
-        .sign-up .success .success-sign-up .timer .time {
+        .login .success .success-sign-up .timer .time {
           font-size: 50px !important;
           line-height: 1;
           text-align: center;
           transform: translate(0px, -145%); }
-        .sign-up .success .success-sign-up .timer .label {
+        .login .success .success-sign-up .timer .label {
           text-align: center;
           transform: translate(0px, -170%); }
-          .sign-up .success .success-sign-up .timer .label span {
+          .login .success .success-sign-up .timer .label span {
             font-size: 19.5px !important;
             line-height: 0.5 !important; }
-    .sign-up .container {
+    .login .container {
       width: 100% !important; }
-      .sign-up .container img {
+      .login .container img {
         width: 300px; }
-      .sign-up .container .form {
+      .login .container .form {
+        width: 100% !important;
         margin-top: 30px; }
-        .sign-up .container .form p {
+        .login .container .form p {
           text-align: left !important; }
-        .sign-up .container .form .my-row {
+        .login .container .form .my-row {
           width: 90%; }
-          .sign-up .container .form .my-row input {
+          .login .container .form .my-row input {
             width: 100%; }
-        .sign-up .container .form .row-1 {
+        .login .container .form .row-1 {
           width: 90%;
           display: block; }
-          .sign-up .container .form .row-1 .my-row {
+          .login .container .form .row-1 .my-row {
             width: 100%; }
-            .sign-up .container .form .row-1 .my-row input {
+            .login .container .form .row-1 .my-row input {
               width: 100%; }
-          .sign-up .container .form .row-1 .my-row1 {
+          .login .container .form .row-1 .my-row1 {
             float: left; }
-          .sign-up .container .form .row-1 .my-row2 {
+          .login .container .form .row-1 .my-row2 {
             float: left; }
-        .sign-up .container .form .last-row {
+        .login .container .form .last-row {
           width: 90%; }
-          .sign-up .container .form .last-row p {
+          .login .container .form .last-row p {
             text-align: justify !important; }
-    .sign-up .bottom-last-row {
+    .login .bottom-last-row {
       width: 70%; }
-      .sign-up .bottom-last-row p {
+      .login .bottom-last-row p {
         text-align: center !important; } }
 @media only screen and (max-width: 500px) {
-  .sign-up {
+  .login {
     padding: 100px 35px; }
-    .sign-up .success h3 {
+    .login .success h3 {
       color: #5dbb46; }
-    .sign-up .success h4 {
+    .login .success h4 {
       margin-bottom: 0px;
       font: normal normal 300 26px/120% Source Sans Pro, sans-serif; }
-    .sign-up .success .success-sign-up {
+    .login .success .success-sign-up {
       width: 100%; }
-      .sign-up .success .success-sign-up .timer {
+      .login .success .success-sign-up .timer {
         width: 100%;
         margin-top: 10px; }
-        .sign-up .success .success-sign-up .timer .svg-style {
+        .login .success .success-sign-up .timer .svg-style {
           transform: translate(0px, 0%) rotate(270deg) scale(0.82, 0.82); }
-        .sign-up .success .success-sign-up .timer #ell {
+        .login .success .success-sign-up .timer #ell {
           fill: #77777712 !important;
           stroke: #5dbb46; }
-        .sign-up .success .success-sign-up .timer .time {
+        .login .success .success-sign-up .timer .time {
           font-size: 42px !important;
           line-height: 1;
           text-align: center;
           transform: translate(0px, -160%); }
-        .sign-up .success .success-sign-up .timer .label {
+        .login .success .success-sign-up .timer .label {
           text-align: center;
           transform: translate(0px, -200%); }
-          .sign-up .success .success-sign-up .timer .label span {
+          .login .success .success-sign-up .timer .label span {
             font-size: 18px !important;
             line-height: 0.5 !important; }
-    .sign-up .container {
+    .login .container {
       width: 100% !important;
       padding: 50px 20px; }
-      .sign-up .container .form {
+      .login .container .form {
         margin-top: 30px; }
-    .sign-up .bottom-last-row {
-      width: 80%; }
-      .sign-up .bottom-last-row p {
+    .login .bottom-last-row {
+      width: 80%;
+      padding: 10px 20px;
+      height: auto; }
+      .login .bottom-last-row p {
+        line-height: 1.5;
         text-align: center !important; } }
 @media only screen and (max-width: 400px) {
-  .sign-up {
+  .login {
     padding: 100px 30px; }
-    .sign-up .success h3 {
+    .login .success h3 {
       color: #5dbb46; }
-    .sign-up .success h4 {
+    .login .success h4 {
       margin-bottom: 0px;
       font: normal normal 300 24px/120% Source Sans Pro, sans-serif; }
-    .sign-up .success .success-sign-up {
+    .login .success .success-sign-up {
       width: 100%; }
-      .sign-up .success .success-sign-up .timer {
+      .login .success .success-sign-up .timer {
         width: 100%;
         margin-top: 10px; }
-        .sign-up .success .success-sign-up .timer .days, .sign-up .success .success-sign-up .timer .hours, .sign-up .success .success-sign-up .timer .minutes, .sign-up .success .success-sign-up .timer .seconds {
+        .login .success .success-sign-up .timer .days, .login .success .success-sign-up .timer .hours, .login .success .success-sign-up .timer .minutes, .login .success .success-sign-up .timer .seconds {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
           width: 70px; }
-        .sign-up .success .success-sign-up .timer .svg-style {
+        .login .success .success-sign-up .timer .svg-style {
           transform: translate(0px, 0%) rotate(270deg) scale(0.72, 0.72); }
-        .sign-up .success .success-sign-up .timer #ell {
+        .login .success .success-sign-up .timer #ell {
           fill: #77777712 !important;
           stroke: #5dbb46; }
-        .sign-up .success .success-sign-up .timer .time {
+        .login .success .success-sign-up .timer .time {
           font-size: 35px !important;
           line-height: 1;
           text-align: center;
           transform: translate(0px, -180%); }
-        .sign-up .success .success-sign-up .timer .label {
+        .login .success .success-sign-up .timer .label {
           text-align: center;
           transform: translate(0px, -200%); }
-          .sign-up .success .success-sign-up .timer .label span {
+          .login .success .success-sign-up .timer .label span {
             font-size: 16px !important;
             line-height: 0.5 !important; }
-    .sign-up .container {
+    .login .container {
       width: 100% !important;
       padding: 50px 20px; }
-      .sign-up .container .form {
+      .login .container .form {
         margin-top: 20px; }
-    .sign-up .bottom-last-row {
+        .login .container .form .last-row button {
+          width: 150px; }
+    .login .bottom-last-row {
       width: 80%; }
-      .sign-up .bottom-last-row p {
+      .login .bottom-last-row p {
         text-align: center !important; } }
 @media only screen and (max-width: 350px) {
-  .sign-up {
+  .login {
     padding: 100px 20px; }
-    .sign-up .container {
+    .login .container {
       width: 100% !important;
       padding: 50px 20px; }
-      .sign-up .container img {
+      .login .container img {
         width: 270px; }
-      .sign-up .container .form {
+      .login .container .form {
         margin-top: 20px; }
-    .sign-up .bottom-last-row {
+    .login .bottom-last-row {
       width: 90%; }
-      .sign-up .bottom-last-row p {
+      .login .bottom-last-row p {
         text-align: center !important; } }
 
 /*# sourceMappingURL=style.css.map */

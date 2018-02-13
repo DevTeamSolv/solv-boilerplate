@@ -48,11 +48,23 @@ const ethAmount = () => createSelector(
   (substate) => substate.get('ethAmount')
 );
 
+const loading = () => createSelector(
+  selectSignUpContainerDomain,
+  (substate) => substate.get('loading')
+);
+
+const signUpSuccess = () => createSelector(
+  selectSignUpContainerDomain,
+  (substate) => substate.get('signUpSuccess')
+);
+
 export {
   fName,
   lName,
   email,
   ethAmount,
   ethAddress,
-  reffCode
+  reffCode,
+  loading,
+  signUpSuccess
 };

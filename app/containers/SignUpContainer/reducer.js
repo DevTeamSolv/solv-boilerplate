@@ -6,7 +6,7 @@
 
 import { fromJS } from 'immutable';
 import {
-  REFF_CODE, FIRST_NAME, LAST_NAME, ETH,EMAIL,AMOUNT
+  REFF_CODE, FIRST_NAME, LAST_NAME, ETH,EMAIL,AMOUNT, CHANGE_LOADER, SIGN_UP_RES, RESET
 } from './constants';
 
 const initialState = fromJS({
@@ -16,6 +16,8 @@ const initialState = fromJS({
   email: '',
   ethAmount: '',
   reffCode: '',
+  loading: false,
+  signUpSuccess: ""
 });
 
 function signUpContainerReducer(state = initialState, action) {
@@ -25,10 +27,6 @@ function signUpContainerReducer(state = initialState, action) {
 
     case LAST_NAME:
       return state.set('lName', action.val);
-
-    case EMAIL:
-      return state.set('email', action.val);
-
     case ETH:
       return state.set('ethAddress', action.val);
 
@@ -37,6 +35,19 @@ function signUpContainerReducer(state = initialState, action) {
 
     case REFF_CODE:
       return state.set('reffCode', action.val);
+
+    case EMAIL:
+      return state.set('email', action.val);
+
+    case CHANGE_LOADER:
+      return state.set('loading', action.val);
+
+    case SIGN_UP_RES:
+      return state.set('signUpSuccess', action.val).set('loading', action.loading);
+
+    case RESET:
+      state = initialState;
+      return state;
 
     default:
       return state;

@@ -928,6 +928,7 @@ div.FM2_DWFullScreenPage1menu_container {
   display: none; }
 
 .overlay {
+  z-index: 9999;
   position: fixed;
   background: #04100c;
   top: 90px;

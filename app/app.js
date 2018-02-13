@@ -27,6 +27,9 @@ import './js/includes/FlexiMenus2/CSSMenu_DWFullScreenPage1menu.css';
 import './js/includes/FlexiMenus2/CSSMenu_DWFullScreenPage1menualt.css';
 import './css/HoverFX.css';
 import './css/main.css';
+import "./containers/SignUpContainer/css/style.css";
+import "./containers/Login/css/style.css";
+
 import './css/media-main.css';
 import "./js/afterLoading";
 // Import root app
