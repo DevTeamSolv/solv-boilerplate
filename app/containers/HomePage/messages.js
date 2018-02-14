@@ -36,7 +36,7 @@ export default defineMessages({
   },
   logIn: {
     id: 'app.components.HomePage.nav.Join',
-    defaultMessage: 'Log In',
+    defaultMessage: 'Sign In',
   },
   signUp: {
     id: 'app.components.HomePage.nav.Join',

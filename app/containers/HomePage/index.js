@@ -310,7 +310,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
               <LINK to='signup'><FormattedMessage {...messages.signUp}/></LINK>
             </div>
             <div className="join-sale">
-              <LINK to="login"><FormattedMessage {...messages.logIn}/></LINK>
+              <LINK to="signin"><FormattedMessage {...messages.logIn}/></LINK>
             </div>
           </div>
             <div onClick={this.handleMusic.bind(this)} className="music-btn">
@@ -373,7 +373,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 <LINK to='signup'><FormattedMessage {...messages.signUp}/></LINK>
               </li>
               <li className="button">
-                <LINK to='login'><FormattedMessage {...messages.logIn}/></LINK>
+                <LINK to='signin'><FormattedMessage {...messages.logIn}/></LINK>
               </li>
             </ul>
           </nav>

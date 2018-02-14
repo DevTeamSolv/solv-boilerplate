@@ -56,7 +56,7 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
     console.log(this.props.signInSuccess)
     return (
       <div className="login">
-        {this.props.signInSuccess === "success" &&
+        {this.props.signInSuccess !== "success" &&
           <div>
           <div className="container">
             <img src={require("../../images/logo-text2.png")}/>
@@ -82,7 +82,7 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
           </div>
         </div>}
 
-        {this.props.signInSuccess !== "success" &&
+        {this.props.signInSuccess === "success" &&
             <SignUpSuccess />
         }
 

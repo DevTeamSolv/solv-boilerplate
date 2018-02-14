@@ -67,7 +67,7 @@ export default defineMessages({
   },
   hassanDesc: {
     id: 'app.components.Team.hassanDesc',
-    defaultMessage: "Tauqeer Hassan is a lead FrontEnd and ReactJS developer and Blockchain Enthusiast. Hassan has worked previously on different ICOs and non-Blockchain platforms.",
+    defaultMessage: "Tauqeer Hassan is the lead FrontEnd & BackEnd developer and Blockchain Enthusiast. Hassan has worked previously on different ICOs and non-Blockchain platforms both on FrontEnd as well as BackEnd technologies. With his extensive experience as a Software Engineer, Hassan is helping us in designing our architecture and developing it with latest and robust technologies like Go & React to make our platform reliable.",
   },
   anaamDesc: {
     id: 'app.components.Team.anaamDesc',

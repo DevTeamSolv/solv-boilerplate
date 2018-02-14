@@ -26,10 +26,10 @@ var router = express.Router();
 //set our port to either a predetermined port number if you have set it up, or 3001
 
 //db config -- set your URI from mLab in secrets.js
-var mongoDB = secrets.requestSecret('db_uri');
-mongoose.connect(mongoDB, { useMongoClient: true })
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+// var mongoDB = secrets.requestSecret('db_uri');
+// mongoose.connect(mongoDB, { useMongoClient: true })
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 //now we should configure the APi to use bodyParser and look for JSON data in the body
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -51,21 +51,6 @@ app.use(function(req, res, next) {
 //now  we can set the route path & initialize the API
 router.get('/', function(req, res) {
   res.json({ message: 'API Initialized!'});
-  // var x = User.find({ email: 'tauqeer@gmail.com' })
-  // console.log(x)
-  // User.find(function(err, users) {
-  //   if (err)
-  //     res.send(err);
-  //   //responds with a json object of our database comments.
-  //   // if(users.email === "tauqeer@gmail.com" ) {
-  //   users.map(function (user) {
-  //     console.log(typeof(user.email), '-----')
-  //   })
-  //   // console.log()
-  //
-  //     res.json(users)
-  //
-  // });
 });
 
 router.route('/login')
@@ -167,7 +152,7 @@ router.route('/users')
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
 // const PORT = '8000'
-app.use('/api', router);
+// app.use('/api', router);
 // app.listen(port, function() {
 //   console.log(`api running on port ${PORT}`);
 // });
