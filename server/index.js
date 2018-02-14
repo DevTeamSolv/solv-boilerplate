@@ -101,16 +101,16 @@ router.route('/login')
 //adding the /comments route to our /api router
 router.route('/users')
 //retrieve all comments from the database
-  .get(function(req, res) {
-    // console.log('get in ')
-    //looks at our Comment Schema
-    User.find(function(err, users) {
-      if (err)
-        res.send(err);
-      //responds with a json object of our database comments.
-      res.json(users)
-    });
-  })
+//   .get(function(req, res) {
+//     // console.log('get in ')
+//     //looks at our Comment Schema
+//     User.find(function(err, users) {
+//       if (err)
+//         res.send(err);
+//       //responds with a json object of our database comments.
+//       res.json(users)
+//     });
+//   })
   //post new comment to the database
   .post(function(req, res) {
     // console.log(req.body)

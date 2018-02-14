@@ -50,7 +50,7 @@ export default defineMessages({
   },
   hassanDesg: {
     id: 'app.components.Team.hassanDesg',
-    defaultMessage: "FrontEnd Engineer",
+    defaultMessage: "Lead Software Engineer",
   },
   anaamDesg: {
     id: 'app.components.Team.anaamDesg',
@@ -67,7 +67,7 @@ export default defineMessages({
   },
   hassanDesc: {
     id: 'app.components.Team.hassanDesc',
-    defaultMessage: "Tauqeer Hassan is the lead FrontEnd & BackEnd developer and Blockchain Enthusiast. Hassan has worked previously on different ICOs and non-Blockchain platforms both on FrontEnd as well as BackEnd technologies. With his extensive experience as a Software Engineer, Hassan is helping us in designing our architecture and developing it with latest and robust technologies like Go & React to make our platform reliable.",
+    defaultMessage: "Tauqeer Hassan is the lead FrontEnd & BackEnd Engineer and Blockchain Enthusiast. Hassan has worked previously on different ICOs and non-Blockchain platforms both on FrontEnd as well as BackEnd technologies. With his extensive experience as a Software Engineer, Hassan is helping us in designing our architecture and developing it with latest and robust technologies like Go & React to make our platform reliable.",
   },
   anaamDesc: {
     id: 'app.components.Team.anaamDesc',
@@ -110,7 +110,7 @@ export default defineMessages({
 
   jamesDesg: {
     id: 'app.components.Team.jamesDesg',
-    defaultMessage: "Public Relations",
+    defaultMessage: "Public Relations Australia",
   },
   arikDesg: {
     id: 'app.components.Team.arikDesg',
@@ -119,7 +119,7 @@ export default defineMessages({
 
   jamesDesc: {
     id: 'app.components.Team.jamesDesc',
-    defaultMessage: "As Solution Token’s public relations manager, James works with the marketing and media teams in order to distribute and specialize materials for the Australian market. He is also responsible for directly interacting with the Australian community and answering any of their questions about Solution.",
+    defaultMessage: "As Solution Token’s Australian public relations manager, James works with the marketing and media teams in order to distribute and specialize materials for the Australian market. He is also responsible for directly interacting with the Australian community and answering any of their questions about Solution.",
   },
   arikDesc: {
     id: 'app.components.Team.arikDesc',

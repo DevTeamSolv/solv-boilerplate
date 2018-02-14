@@ -176,7 +176,7 @@ export default defineMessages({
   },
   hassanDesg: {
     id: 'app.components.Team.hassanDesg',
-    defaultMessage: "FrontEnd Engineer",
+    defaultMessage: "Lead Software Engineer",
   },
   anaamDesg: {
     id: 'app.components.Team.anaamDesg',
@@ -202,7 +202,7 @@ export default defineMessages({
 
   jamesDesg: {
     id: 'app.components.Team.jamesDesg',
-    defaultMessage: "Public Relations",
+    defaultMessage: "Public Relations Australia",
   },
   arikDesg: {
     id: 'app.components.Team.arikDesg',
