@@ -374,12 +374,12 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                   <FormattedMessage {...messages.navTeam}/>
                 </Link>
               </li>
-              <li className="button">
-                <LINK to='signup'><FormattedMessage {...messages.signUp}/></LINK>
-              </li>
-              <li className="button">
-                <LINK to='login'><FormattedMessage {...messages.logIn}/></LINK>
-              </li>
+              {/*<li className="button">*/}
+                {/*<LINK to='signup'><FormattedMessage {...messages.signUp}/></LINK>*/}
+              {/*</li>*/}
+              {/*<li className="button">*/}
+                {/*<LINK to='login'><FormattedMessage {...messages.logIn}/></LINK>*/}
+              {/*</li>*/}
             </ul>
           </nav>
         </div>
