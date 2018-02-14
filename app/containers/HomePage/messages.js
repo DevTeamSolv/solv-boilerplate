@@ -107,7 +107,7 @@ export default defineMessages({
   },
   allow: {
     id: 'app.components.Whitepaper.allow',
-    defaultMessage: 'This will allow users to both have visual and a virtual experience.&nbsp;',
+    defaultMessage: 'This will allow users to both have visual and a virtual experience.',
   },
   coming: {
     id: 'app.components.Whitepaper.coming',

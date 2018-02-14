@@ -22,7 +22,7 @@ import "slick-carousel/slick/slick-theme.css";
 import * as Scroll from 'react-scroll';
 import {changeLocale} from "../LanguageProvider/actions";
 import {makeSelectLocale} from "../LanguageProvider/selectors";
-import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SolutionToken_WP_v1.0.pdf';
+import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SOLUTION-TOKEN-White-Paper.pdf';
 
 let Link       = Scroll.Link;
 let Element    = Scroll.Element;
