@@ -152,7 +152,7 @@ router.route('/users')
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
 // const PORT = '8000'
-// app.use('/api', router);
+app.use('/api', router);
 // app.listen(port, function() {
 //   console.log(`api running on port ${PORT}`);
 // });
