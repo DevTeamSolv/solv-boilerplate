@@ -12,12 +12,14 @@
     h3 {
       text-align: center;
       color: #5dbb46;
+      text-transform: capitalize;
     }
     h4 {
       text-align: center;
       //letter-spacing: 1px;
       //word-spacing: 1px;
-      margin: 0px;
+      margin: 30px auto;
+
       font: normal normal 300 30px/120% Source Sans Pro, sans-serif;
     }
     .success-sign-up {

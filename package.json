@@ -144,6 +144,7 @@
     "nodemon": "^1.14.12",
     "numeral": "^2.0.6",
     "prop-types": "15.5.10",
+    "randomstring": "^1.1.5",
     "react": "15.6.1",
     "react-animations": "^1.0.0",
     "react-dom": "15.6.1",

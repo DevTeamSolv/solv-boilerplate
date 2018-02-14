@@ -154,14 +154,14 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
                     </div>
                   </div>
                 </div>
-                <div className={(this.state.email && ( !this.props.signUpSuccess || this.props.signUpSuccess === "registered" )) ? "my-row" : "my-row error"}>
-                  <div className="my-label"><p>Email {!this.state.email && <span> *Invalid Email Address</span>} {this.state.email && this.props.signUpSuccess && <b><span className="already"> **Already registered</span></b>}</p></div>
+                <div className={(this.state.email &&  this.props.signUpSuccess !== "email" ) ? "my-row" : "my-row error"}>
+                  <div className="my-label"><p>Email {!this.state.email && <span> *Invalid Email Address</span>} {this.state.email && this.props.signUpSuccess === "email" && <b><span className="already"> **Already registered</span></b>}</p></div>
                   <div className="input">
                     <input onFocus={this.handleFocus.bind(this, "email")}  onChange={this.props.changeEmail} value={this.props.email} placeholder="Enter your Email address" />
                   </div>
                 </div>
-                <div className={this.state.ethAddress ? "my-row" : "my-row error"}>
-                  <div className="my-label"><p>Ethereum Address <span> *required</span></p></div>
+                <div className={(this.state.ethAddress &&  this.props.signUpSuccess !== "address" ) ? "my-row" : "my-row error"}>
+                  <div className="my-label"><p>Ethereum Address {!this.state.ethAddress && <span> *required</span>} {this.state.ethAddress && this.props.signUpSuccess ==="address" && <b><span className="already"> **Already registered</span></b>}</p></div>
                   <div className="input">
                     <input onFocus={this.handleFocus.bind(this, "ethAddress")}  onChange={this.props.changeEthAddress} value={this.props.ethAddress} placeholder="Enter your ETH address" />
                   </div>
@@ -172,8 +172,8 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
                     <input onFocus={this.handleFocus.bind(this, "ethAmount")}  onChange={this.props.changeAmount} value={this.props.ethAmount} type="number" placeholder="Enter ETH amount" min={0}/>
                   </div>
                 </div>
-                <div className={this.state.refCode ? "my-row" : "my-row error"}>
-                  <div className="my-label"><p>Referral Code <span className="opactiy-one"> *optional</span></p></div>
+                <div className={(this.props.signUpSuccess !== "invalid_ref" ) ? "my-row" : "my-row error"}>
+                  <div className="my-label"><p>Referral Code {this.props.signUpSuccess !== "invalid_ref" && <span className="opactiy-one"> *optional</span>}{this.props.signUpSuccess === "invalid_ref" && <span className="already"> **<b>wrong referral code</b></span>}</p></div>
                   <div className="input">
                     <input   onChange={this.props.changeCode} value={this.props.reffCode} placeholder="Enter referral code"/>
                   </div>
@@ -197,7 +197,7 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
         }
 
         {this.props.signUpSuccess === "registered" &&
-          <SignUpSuccess />
+          <SignUpSuccess signup={true} fName={this.props.fName}/>
         }
       </div>
     );

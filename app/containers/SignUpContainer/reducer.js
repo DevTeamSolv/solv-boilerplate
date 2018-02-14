@@ -43,6 +43,7 @@ function signUpContainerReducer(state = initialState, action) {
       return state.set('loading', action.val);
 
     case SIGN_UP_RES:
+      console.log(action.val)
       return state.set('signUpSuccess', action.val).set('loading', action.loading);
 
     case RESET:

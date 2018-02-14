@@ -9,21 +9,21 @@ import axios from "axios";
 
 function* signIn() {
   yield put(changeLoader(true));
-  const Email = yield select(makeSelectEmail());
+  const eth_address = yield select(makeSelectEmail());
   const data = {
-    email: Email
+    eth_address
   }
   console.log(data, "first-name")
 
 
   try {
-    const res = yield call(axios.post.bind(axios, 'http://ec2-52-201-203-83.compute-1.amazonaws.com/api/login'), data);
-    // const res = yield call(axios.post.bind(axios, 'http://localhost:8000/api/login'), data);
+    // const res = yield call(axios.post.bind(axios, 'http://ec2-52-201-203-83.compute-1.amazonaws.com/api/login'), data);
+    const res = yield call(axios.post.bind(axios, 'http://localhost:8000/api/login'), data);
     console.log(res);
     if(res.statusText === "OK"){
       if(res.data.success) {
-        console.log("signup Successful")
-        yield put(signInResp("success", false));
+        console.log(res.data, "signup Successful")
+        yield put(signInResp("success", false, res.data.user.first_name));
         // var h = $(document).height(); // returns height of HTML document
         // $('.sign-up').css('min-height', h+'px')
       }

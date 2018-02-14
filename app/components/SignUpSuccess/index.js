@@ -17,8 +17,11 @@ class SignUpSuccess extends React.Component { // eslint-disable-line react/prefe
         <div className="container success">
           <div className="success-sign-up">
             <img src={require("../../images/logo-text2.png")}/>
-            <h3>
+            {this.props.signup && <h3>
               Sign Up Successful!
+            </h3>}
+            <h3>
+              Hi {this.props.fName}!
             </h3>
             <h4>
               Presale starts on 20<sup>th</sup> March

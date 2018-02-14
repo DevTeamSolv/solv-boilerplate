@@ -29,8 +29,12 @@ const signInSuccess = () => createSelector(
   selectLoginDomain,
   (substate) => substate.get('signInSuccess')
 );
+const fName = () => createSelector(
+  selectLoginDomain,
+  (substate) => substate.get('fName')
+);
 export {
   makeSelectEmail,
   signInSuccess,
-  loading
+  loading, fName
 };

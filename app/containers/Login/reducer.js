@@ -12,7 +12,8 @@ import {
 const initialState = fromJS({
   email: '',
   loading: false,
-  signInSuccess: ""
+  signInSuccess: "",
+  fName: "",
 });
 
 function loginReducer(state = initialState, action) {
@@ -24,7 +25,7 @@ function loginReducer(state = initialState, action) {
       return state.set('loading', action.val);
 
     case SIGN_IN_RES:
-      return state.set('signInSuccess', action.val).set('loading', action.loading);
+      return state.set('signInSuccess', action.val).set('loading', action.loading).set('fName', action.fName);
 
     case RESET:
       state = initialState;

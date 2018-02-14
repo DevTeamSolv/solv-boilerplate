@@ -20,7 +20,7 @@ import messages from './messages';
 import "./css/style.css";
 import { Button } from 'antd';
 import {changeEmail, signIn, reset} from './actions';
-import {makeSelectEmail, loading, signInSuccess} from './selectors';
+import {makeSelectEmail, loading, signInSuccess, fName} from './selectors';
 import {Link} from 'react-router-dom';
 import $ from "jquery";
 import SignUpSuccess from "../../components/SignUpSuccess/Loadable";
@@ -53,7 +53,7 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
     $(".login").css('min-height', w+"px")
   }
   render() {
-    console.log(this.props.signInSuccess)
+    console.log(this.props.fName)
     return (
       <div className="login">
         {this.props.signInSuccess !== "success" &&
@@ -61,8 +61,8 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
           <div className="container">
             <img src={require("../../images/logo-text2.png")}/>
             <div className="form">
-              <div className={this.state.email ? "my-row" : "my-row error"}>
-                <div className="my-label"><p>ETH Address {!this.state.email && <span> *Invalid ETH Address</span>} </p></div>
+              <div className={this.state.email && this.props.signInSuccess !== "invalid" ? "my-row" : "my-row error"}>
+                <div className="my-label"><p>ETH Address <span> *Invalid ETH Address</span> </p></div>
                 <div className="input">
                   <input onFocus={this.handleFocus.bind(this, "email")} value={this.props.email} onChange={this.props.changeEmail} placeholder="Enter your ETH address" />
                 </div>
@@ -83,7 +83,7 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
         </div>}
 
         {this.props.signInSuccess === "success" &&
-            <SignUpSuccess />
+            <SignUpSuccess signup={false} fName={this.props.fName}/>
         }
 
       </div>
@@ -95,6 +95,7 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
 const mapStateToProps = createStructuredSelector({
   email: makeSelectEmail(),
   loading: loading(),
+  fName: fName(),
   signInSuccess: signInSuccess(),
 });
 

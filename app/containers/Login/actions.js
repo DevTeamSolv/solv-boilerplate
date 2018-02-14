@@ -27,11 +27,12 @@ export function changeLoader(val) {
     val
   };
 }
-export function signInResp(val, loading) {
+export function signInResp(val, loading, fName) {
   return {
     type: SIGN_IN_RES,
     val,
-    loading
+    loading,
+    fName
   };
 }
 export function reset() {

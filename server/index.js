@@ -16,7 +16,9 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var Comment = require('../model/comments');
 var User = require('../model/user');
+var Referral = require('../model/refferal');
 var secrets = require('../secrets_template');
+var randomstring = require("randomstring");
 
 var router = express.Router();
 
@@ -37,8 +39,8 @@ app.use(bodyParser.json());
 
 //To prevent errors from Cross Origin Resource Sharing, we will set our headers to allow CORS with middleware like so:
 app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', 'http://ec2-52-201-203-83.compute-1.amazonaws.com');
-  // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+  // res.setHeader('Access-Control-Allow-Origin', 'http://ec2-52-201-203-83.compute-1.amazonaws.com');
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
@@ -70,19 +72,21 @@ router.route('/login')
         res.send(err);
       //responds with a json object of our database comments.
       // if(users.email === "tauqeer@gmail.com" ) {
+      console.log(req.body.eth_address, obj.eth_address)
       users.map(function (obj) {
         if(obj.eth_address === req.body.eth_address && !success) {
+          console.log(req.body.eth_address, obj.eth_address, 'in ---')
           already = true
           user = obj;
-          message = "succesful"
+          message = "successful"
           success = true
           res.json({ message, success, user });
         }
       })
       //
       if(!already) {
-        console.log(already, " ----   in");
-          message = 'Invalid!'
+        console.log(already, " ----  noy in");
+          message = 'invalid'
           success = false
           res.json({ message, success });
       }
@@ -111,27 +115,95 @@ router.route('/users')
   .post(function(req, res) {
     // console.log(req.body)
     var user = new User();
+    var _referral = new Referral();
     var message = "";
     var success = false;
 
 
     User.find(function(err, users) {
       var already = false;
+      var email_already = false;
+      var address_already = false;
+      var ref_already = false;
       if (err)
         res.send(err);
       //responds with a json object of our database comments.
       // if(users.email === "tauqeer@gmail.com" ) {
       users.map(function (obj) {
-        if(obj.email === req.body.email) {
+        if((obj.email === req.body.email) && !email_already && !already) {
+          email_already = true
           already = true
-          message = "User already registered!"
+          message = "email"
+          success = false
+          res.json({ message, success });
+        }
+        if((obj.eth_address === req.body.eth_address) && !address_already && !already) {
+          address_already = true
+          already = true
+          message = "address"
           success = false
           res.json({ message, success });
         }
       })
+      // console.log(req.body.ref_code)
+      if(req.body.ref_code) {
+        Referral.find(function (err, ref) {
+          var length = ref.length
+          ref.map(function (obj, index) {
+            // console.log(obj, index)
+            if((obj.ref_code === req.body.ref_code) && !ref_already && !already) {
+              ref_already = true;
+              // console.log(obj, "---")
+              // already = true
+              // message = "invalid_referral"
+              // success = false
+              // res.json({ message, success });
+
+              // console.log(already, " ----   in");
+              (req.body.first_name) ? user.first_name = req.body.first_name : null;
+              (req.body.last_name) ? user.last_name = req.body.last_name : null;
+              (req.body.email) ? user.email = req.body.email : null;
+              (req.body.eth_address) ? user.eth_address = req.body.eth_address : null;
+              (req.body.eth_amount) ? user.eth_amount = req.body.eth_amount : null;
+              (req.body.ref_code) ? user.ref_code = req.body.ref_code : null;
+              user.save(function (err) {
+                if (err)
+                  res.send(err);
+                message = 'User successfully registered!'
+                success = true
+                res.json({message, success});
+              })
+            }
+            if(length === index+1 && !ref_already && !already) {
+              ref_already = true
+              // console.log(obj, "---")
+              // already = true
+              // message = "invalid_referral"
+              // success = false
+              // res.json({ message, success });
+
+              // console.log(already, " ----   in");
+              // (req.body.first_name) ? user.first_name = req.body.first_name : null;
+              // (req.body.last_name) ? user.last_name = req.body.last_name : null;
+              // (req.body.email) ? user.email = req.body.email : null;
+              // (req.body.eth_address) ? user.eth_address = req.body.eth_address : null;
+              // (req.body.eth_amount) ? user.eth_amount = req.body.eth_amount : null;
+              // (req.body.ref_code) ? user.ref_code = req.body.ref_code : null;
+              // user.save(function (err) {
+              //   if (err)
+              //     res.send(err);
+                message = 'invalid_ref'
+                success = false
+                res.json({message, success});
+              // })
+            }
+
+          })
+        })
+      }
       //
-      if(!already) {
-        console.log(already, " ----   in");
+      if(!already && !req.body.ref_code) {
+        // console.log(already, " ----   in");
         (req.body.first_name) ? user.first_name = req.body.first_name : null;
         (req.body.last_name) ? user.last_name = req.body.last_name : null;
         (req.body.email) ? user.email = req.body.email : null;

@@ -10,7 +10,8 @@
       margin: 0px auto; }
     .sign-up .success h3 {
       color: #5dbb46;
-      font-weight: bold; }
+      font-weight: bold;
+      text-transform: capitalize; }
     .sign-up .success h4 {
       font: normal normal 300 30px/120% Source Sans Pro, sans-serif; }
     .sign-up .success .success-sign-up {
