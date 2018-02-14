@@ -26,10 +26,10 @@ var router = express.Router();
 //set our port to either a predetermined port number if you have set it up, or 3001
 
 //db config -- set your URI from mLab in secrets.js
-// var mongoDB = secrets.requestSecret('db_uri');
-// mongoose.connect(mongoDB, { useMongoClient: true })
-// var db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+var mongoDB = secrets.requestSecret('db_uri');
+mongoose.connect(mongoDB, { useMongoClient: true })
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 //now we should configure the APi to use bodyParser and look for JSON data in the body
 app.use(bodyParser.urlencoded({ extended: true }));
