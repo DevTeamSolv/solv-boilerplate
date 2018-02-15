@@ -187,8 +187,9 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
                 </div>
                 <div className={this.state.checked ? "last-row" : "last-row error"}>
                   <div className="checkbox">
-                    <input value={this.state.checkBox} onChange={this.handleCheckBox.bind(this)} type="checkbox"/><p>I understand to follow all rules and regulations within your country, state and territory and have read the whitepaper thoroughly. </p>
+                    <input value={this.state.checkBox} onChange={this.handleCheckBox.bind(this)} type="checkbox"/><p>I understand to follow all rules and regulations within my country, state and territory and have read the whitepaper thoroughly. </p>
                   </div>
+                  <p className="note"><b>Note: </b>Please remember ETH address you used here, this will be required for Sign In.</p>
                   <Button type="primary" loading={this.props.loading} onClick={this.login.bind(this)}>
                     Sign Up
                   </Button>

@@ -140,14 +140,16 @@
         flex-direction: column;
         align-items: center;
         margin-top: 30px; }
+        .sign-up .container .form .last-row p {
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 18px !important; }
         .sign-up .container .form .last-row .checkbox {
           display: flex; }
-          .sign-up .container .form .last-row .checkbox p {
-            color: rgba(0, 0, 0, 0.65);
-            font-size: 18px !important; }
           .sign-up .container .form .last-row .checkbox input {
             margin-top: 10px;
             margin-right: 10px; }
+        .sign-up .container .form .last-row p.note {
+          margin: 12px 0px 40px 25px !important; }
         .sign-up .container .form .last-row button {
           background-color: #5dbb46;
           color: #fff;

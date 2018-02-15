@@ -760,7 +760,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/ingram.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "andrew")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:a.ingram@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -774,7 +774,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/matt.png")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "matthew")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:m.wolff@solutiontoken.net"> <i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -788,7 +788,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/David.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "david")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:d.casciato@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -802,7 +802,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/Micheal.png")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "mike")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:m.gogarty@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -818,7 +818,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/mahar_husnain.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "mahar")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:mahar@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -832,7 +832,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/ali_Zain.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "zain")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:a.zain@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -846,7 +846,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/has.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "hassan")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:hassan@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr className="hassan"/>
                             <div className="hassan info">
@@ -860,7 +860,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/anaam.png")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "anaam")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:a.ingram@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -877,7 +877,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/Joshua L.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "legaspi")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:j.legaspi@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -891,7 +891,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/new-sean.png")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "sean")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:s.gallagher@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -905,7 +905,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/eli-1.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "eli")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:e.karadsheh@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -919,7 +919,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/SOLV PROFILES 005.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "daniel")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:d.faraj@soltiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -936,7 +936,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/James fawk.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:j.fawke@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -950,7 +950,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/James fawk.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:j.fawke@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -964,7 +964,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/Arik.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "arik")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:a.balolong@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -978,7 +978,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             <img src={require("../../images/team/size-/Arik.jpg")}/>
                             <div className="links">
                               <a onClick={this.handleDetails.bind(this, "arik")}><FormattedMessage {...messages.bio}/></a>
-                              <i className="fa fa-envelope" aria-hidden="true"></i>
+                              <a href="mailto:a.ingram@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                             </div>
                             <hr/>
                             <div className="info">
@@ -1029,7 +1029,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/ingram.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "andrew")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:a.ingram@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1043,7 +1043,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/matt.png")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "matthew")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:m.wolff@solutiontoken.net"> <i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1059,7 +1059,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/David.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "david")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:d.casciato@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1073,7 +1073,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/Micheal.png")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "mike")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:m.gogarty@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1089,7 +1089,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/mahar_husnain.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "mahar")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:mahar@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1103,7 +1103,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/ali_Zain.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "zain")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:a.zain@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1120,7 +1120,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/has.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "hassan")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:hassan@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr className="hassan"/>
                               <div className="hassan info">
@@ -1134,7 +1134,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/anaam.png")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "anaam")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:a.ingram@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1150,7 +1150,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/Joshua L.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "legaspi")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:j.legaspi@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1164,7 +1164,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/new-sean.png")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "sean")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:s.gallagher@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1181,7 +1181,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/eli-1.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "eli")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:e.karadsheh@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1195,7 +1195,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/SOLV PROFILES 005.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "daniel")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:d.faraj@soltiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1212,7 +1212,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/James fawk.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:j.fawke@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">
@@ -1229,7 +1229,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <img src={require("../../images/team/size-/Arik.jpg")}/>
                               <div className="links">
                                 <a onClick={this.handleDetails.bind(this, "arik")}><FormattedMessage {...messages.bio}/></a>
-                                <i className="fa fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:a.balolong@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                               </div>
                               <hr/>
                               <div className="info">

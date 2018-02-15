@@ -182,16 +182,19 @@
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
+        p {
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 18px !important;
+        }
         .checkbox {
           display: flex;
-          p {
-            color: rgba(0, 0, 0, 0.65);
-            font-size: 18px !important;
-          }
           input {
             margin-top: 10px;
             margin-right: 10px;
           }
+        }
+        p.note {
+          margin: 12px 0px 40px 25px !important;
         }
         button {
           background-color: #5dbb46;

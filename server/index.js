@@ -53,6 +53,24 @@ app.use(function(req, res, next) {
 
 //now  we can set the route path & initialize the API
 router.get('/', function(req, res) {
+
+  // for(var i=0; i<100; i++){
+  //   var ref = new Referral();
+  //
+  //   var rand = randomstring.generate({
+  //     length: 6,
+  //     charset: 'alphanumeric'
+  //   });
+  //
+  //   ref.ref_code = rand;
+  //   ref.save(function(err) {
+  //     if (err)
+  //       res.send(err);
+  //   });
+  //   console.log(ref)
+  //
+  // }
+
   res.json({ message: 'API Initialized!'});
 });
 

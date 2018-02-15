@@ -1040,7 +1040,8 @@ video {
             .team-details .team-container .members-row .member-container .inner-member-container .links a {
               cursor: pointer;
               font-weight: bold;
-              padding: 3px 5px; }
+              padding: 3px 5px;
+              color: #1e8e1a; }
             .team-details .team-container .members-row .member-container .inner-member-container .links i {
               padding: 5px 10px;
               cursor: pointer; }
