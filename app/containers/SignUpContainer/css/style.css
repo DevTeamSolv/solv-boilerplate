@@ -9,7 +9,15 @@
     margin: 0px auto;
     font-size: 22px;
     color: #56d42b;
-    font-weight: 500; }
+    font-weight: 500;
+    padding: 9px 30px;
+    border: 2px solid #56d42b;
+    border-radius: 101px;
+    -webkit-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s; }
+  .sign-up-in a:hover {
+    background-color: rgba(184, 187, 183, 0.18); }
 
 .sign-up {
   background-image: url("../../../images/wallpaperbg.png");
