@@ -1,3 +1,16 @@
+.sign-up-in {
+  justify-content: center;
+  display: flex;
+  padding: 19px !important;
+  height: auto !important;
+  align-items: center; }
+  .sign-up-in a {
+    text-decoration: none;
+    margin: 0px auto;
+    font-size: 22px;
+    color: #56d42b;
+    font-weight: 500; }
+
 .sign-up {
   background-image: url("../../../images/wallpaperbg.png");
   width: 100%;

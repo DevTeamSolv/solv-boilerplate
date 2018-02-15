@@ -55,6 +55,13 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
   render() {
     console.log(this.props.fName)
     return (
+      <div>
+
+        <div className="row_51 sign-up-in animated-scroll">
+
+          <Link to="/">Home</Link>
+
+        </div>
       <div className="login">
         {this.props.signInSuccess !== "success" &&
           <div>
@@ -86,6 +93,7 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
             <SignUpSuccess signup={false} fName={this.props.fName}/>
         }
 
+      </div>
       </div>
     );
   }

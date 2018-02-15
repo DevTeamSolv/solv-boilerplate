@@ -446,7 +446,7 @@ p {
   .team-details {
     margin-top: 100px;
     .team-container .members-row .member-container {
-      height: 350px;
+      min-height: 350px;
       width: 23%;
     }
   }
@@ -964,7 +964,8 @@ p {
         .member-container {
           color: #1e8e1a;
           width: 90%;
-          height: 330px;
+          margin: 0px auto;
+          min-height: 330px;
           display: flex;
           flex-direction: column;
           align-items: center;

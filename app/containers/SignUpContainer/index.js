@@ -134,6 +134,12 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
   render() {
     console.log(this.props.signUpSuccess)
     return (
+<div>
+    <div className="row_51 sign-up-in animated-scroll">
+
+            <Link to="/">Home</Link>
+
+    </div>
       <div className="sign-up">
         { this.props.signUpSuccess !== "registered" &&
           <div>
@@ -200,6 +206,7 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
           <SignUpSuccess signup={true} fName={this.props.fName}/>
         }
       </div>
+</div>
     );
   }
 }
