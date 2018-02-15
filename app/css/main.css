@@ -634,11 +634,18 @@ div.FM2_DWFullScreenPage1menu_container {
       border-radius: 100%;
       padding: 6px; }
 
-#community .community-popup h3 {
-  text-align: center; }
-#community .community-popup p {
-  text-align: center;
-  color: #000000a6; }
+#community .community-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #community .community-popup h3 {
+    text-align: center; }
+  #community .community-popup p {
+    text-align: center;
+    color: #000000a6; }
+#community .SC img {
+  margin-top: 20px;
+  width: 125px; }
 #community .skylight-dialog {
   height: 250px !important; }
   #community .skylight-dialog a.skylight-close-button {

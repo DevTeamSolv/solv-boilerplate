@@ -23,7 +23,7 @@ class TeamDetails extends React.Component { // eslint-disable-line react/prefer-
             </div>
             <p className="name">Andrew Ingram</p>
             <p className="designation"><FormattedMessage {...messages.andrewDesg}/></p>
-            <p className="description"><FormattedMessage {...messages.arikDesc}/></p>
+            <p className="description"><FormattedMessage {...messages.andrewDesc}/></p>
           </div>
         }
         {
