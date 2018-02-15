@@ -1413,7 +1413,10 @@ video {
       margin-bottom: 20px;
       height: 100px; }
       .column_291 .social a img {
-        width: 80%; }
+        width: 80%;
+        -webkit-transition: all 0.3s linear 0s;
+        -o-transition: all 0.3s linear 0s;
+        transition: all 0.3s linear 0s; }
       .column_291 .social a img:hover {
         width: 90%; }
   .column_291 .social-data {

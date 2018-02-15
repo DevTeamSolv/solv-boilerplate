@@ -55,8 +55,8 @@ export class SignUpContainer extends React.Component { // eslint-disable-line re
     var h = $(document).height(); // returns height of HTML document
     var w = $(window).height(); // returns height of HTML document
     var nav = $(".sign-up-in").height(); // returns height of HTML document
-    console.log(h, w)
-    $(".sign-up").css('min-height', (w-nav)+"px")
+    console.log(w, nav)
+    $(".sign-up").css('min-height', (w-nav-38)+"px")
     // $("#app").css('background-image', "url(../../images/wallpaper.png)")
   }
   route(){

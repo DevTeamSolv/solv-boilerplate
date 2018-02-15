@@ -50,8 +50,9 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
     var h = $(document).height(); // returns height of HTML document
     var w = $(window).height(); // returns height of HTML document
     var nav = $(".sign-up-in").height(); // returns height of HTML document
-    console.log(h, w)
-    $(".login").css('min-height', (w-nav)+"px")
+    console.log(w, nav)
+    $(".login").css('min-height', (w-nav-38)+"px")
+    // $(".login").css('height', (w-nav-19)+"px")
 
   }
   render() {

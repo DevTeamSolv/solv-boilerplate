@@ -22,6 +22,8 @@ import 'react-rangeslider/lib/index.css'
 import axios from "axios";
 import numeral from "numeral";
 import $ from "jquery";
+import {Link} from 'react-router-dom';
+
 export class Sale extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   constructor(props){
@@ -110,7 +112,7 @@ export class Sale extends React.Component { // eslint-disable-line react/prefer-
                                 </span></p>
                 </div>
               </div>
-              <a className="button-sale" href="#"><FormattedMessage {...messages.join}/></a>
+              <Link className="button-sale" to="signup"><FormattedMessage {...messages.join}/></Link>
             </div>
 
             <div className="slider-part">
@@ -165,7 +167,7 @@ export class Sale extends React.Component { // eslint-disable-line react/prefer-
                 </div>
 
               </div>
-              <a className="button-sale" href="#">Join The Solution</a>
+              <Link className="button-sale" to="signup"><FormattedMessage {...messages.join}/></Link>
             </div>
 
           </div>
