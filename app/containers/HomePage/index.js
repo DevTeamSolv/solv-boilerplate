@@ -40,7 +40,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
       currentTab: 9,
       hide: true,
       mounted: true,
-      paused: false,
+      paused: true,
       muted: false,
       hamburgerOpen: false,
       member: "",
@@ -96,12 +96,6 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
     })
     this.teamDialog.show();
   }
-  onClickFooter () {
-    // scrollify.next();
-    // var x = scrollify.current();
-    // console.log(x[0])
-    // console.log(x[0].class)
-  }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
     console.log(window.innerWidth)
@@ -110,10 +104,35 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
         hamburgerOpen: true
       })
     }
+    this.onYouTubeIframeAPIReady();
     // var el = document.getElementById('myVideo')
     // el.play();
     // el.muted = false;
   }
+  player
+  self = this;
+
+  onYouTubeIframeAPIReady() {
+  self.player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'fzLdtFAyFFA', // YouTube Video ID
+    // width: 560,               // Player width (in px)
+    // height: 316,              // Player height (in px)
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 0,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 0,         // Hide video controls when playing
+      rel: 0,         // Hide video controls when playing
+      mute: 1,         // Hide video controls when playing
+      suggestedQuality: 'hd720',         // Hide video controls when playing
+    },
+  });
+}
   mount = true;
   componentWillUnmount () {
     this.setState({
@@ -186,23 +205,17 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
     $("#overlay").removeClass('open');
   }
   handleVideo(){
-    var el = document.getElementById('myVideo')
-    el.muted = false;
-    var audioEl = document.getElementById('myAudio')
-
-    if(el.paused) {
-      el.play();
-      // audioEl.pause();
-      this.setState({
-        paused: false,
-        // muted: true
-      })
+    if(self.player.isMuted()){
+      self.player.unMute();
+        this.setState({
+          paused: false,
+        })
     }
     else {
-      el.pause();
-      this.setState({
-        paused: true
-      })
+      self.player.mute();
+        this.setState({
+          paused: true
+        })
     }
   }
   handleMusic(){
@@ -386,19 +399,25 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
         </div>
         {/*</div>*/}
         <Element name="video" className="element">
+          <div id="muteYouTubeVideoPlayer"></div>
+
+
+
+
           {/*<iframe width="100%" height="900px" src="https://www.youtube.com/embed/fzLdtFAyFFA?rel=0&controls=0&loop=1&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>*/}
-          <iframe id="iframe" width="100%" height="900px" src="https://www.youtube.com/embed/fzLdtFAyFFA?rel=0&controls=0&loop=1&showinfo=0&loop=1" frameBorder="0" loop allowFullScreen></iframe>
+          {/*<iframe id="player" width="100%" height="900px" src="https://www.youtube.com/embed/fzLdtFAyFFA" frameBorder="0" loop allowFullScreen></iframe>*/}
           {/*<video onClick={this.handleVideo.bind(this)} loop id="myVideo">*/}
           {/*<source src={require("../../images/gifs/Solv web video.mp4")} type="video/mp4" />*/}
           {/*Your browser does not support HTML5 video.*/}
           {/*</video>*/}
           <AudioPlayer />
-          {/*<div onClick={this.handleVideo.bind(this)} className="audio-icon">*/}
-          {/*{!this.state.paused && <img src={require("../../images/pause-coloured.png")}/>}*/}
-          {/*{this.state.paused && <img src={require("../../images/110962-glowing-green-neon-icon-arrows-arrow3-right-solid-circle.png")}/>}*/}
-          {/*</div>*/}
+          <div onClick={this.handleVideo.bind(this)} className="audio-icon">
+          {!this.state.paused && <img src={require("../../images/icons8-audio-100.png")}/>}
+          {this.state.paused && <img src={require("../../images/icons8-no-audio-100.png")}/>}
+          </div>
           <img className="display-none load-before" src={require("../../images/size-/wallpaper.png")}/>
           <img className="display-none load-before" src={require("../../images/1.jpg")}/>
+          <img className="display-none load-before" src={require("../../images/banner.png")}/>
           <div className="content">
             <div className="page-content DWFullScreenPage_container" id="DWFullScreenPage1">
               <Element name="home" className="element">

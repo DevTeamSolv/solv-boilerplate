@@ -12,6 +12,9 @@
   .top-langs p.active {
     color: #58e02a; }
 
+iframe {
+  width: 100%; }
+
 .row_30 {
   height: auto !important;
   position: inherit;
@@ -57,9 +60,10 @@
   bottom: 50px;
   margin-left: 50px; }
   .audio-icon img {
+    cursor: pointer;
     width: 50px;
     height: 50px;
-    background: #000;
+    background: #fbf4f4c4;
     border: 1px solid #212f1d;
     border-radius: 100%;
     padding: 6px;
