@@ -48,12 +48,9 @@ import 'file-loader?name=[name].[ext]!./.htaccess';
 
 
 setTimeout(function () {
-  // document.getElementById('iframe').src += '&autoplay=1';
-  setTimeout(function () {
     document.getElementById('outer-loader').style.display = 'none';
     document.getElementById('app').style.display = 'block';
-  }, 500)
-}, 1000)
+}, 10000)
 
 
 import configureStore from './configureStore';
