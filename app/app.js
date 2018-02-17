@@ -35,7 +35,6 @@ import "./js/afterLoading";
 // Import root app
 import App from 'containers/App';
 import { unregister } from './registerServiceWorker';
-
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
 
@@ -44,6 +43,7 @@ import LanguageProvider from 'containers/LanguageProvider';
 import '!file-loader?name=[name].[ext]!./favico/favicon.ico';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
+import 'file-loader?name=[name].[ext]!./google44434e3397bb25ac.html';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 
