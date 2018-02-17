@@ -46,6 +46,16 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
+
+setTimeout(function () {
+  document.getElementById('iframe').src += '&autoplay=1';
+  setTimeout(function () {
+    document.getElementById('outer-loader').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+  }, 500)
+}, 10000)
+
+
 import configureStore from './configureStore';
 unregister();
 // Import i18n messages

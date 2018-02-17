@@ -71,7 +71,7 @@ export default defineMessages({
   },
   anaamDesc: {
     id: 'app.components.Team.anaamDesc',
-    defaultMessage: "Anaam Desc",
+    defaultMessage: "Anaam Nizami is blockchain enthusiast and believer of decentralized future. He has worked on various consensus algorithms and developed several dapps. He is auditing testing smart contract and leading SOLV's Blockchain from front.",
   },
 
   joshDesg: {

@@ -12,10 +12,22 @@
     <meta name="keywords" content="solution token, blockchain, smart contracts, cloud computer, cryptocurrency, crypto, ethereum">
     <meta property="og:url" content="http://www.solutiontoken.net">
     <meta property="og:title" content="Solution Token" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:description"        content="Presale Coming Soon" />
+    <!--<meta property="og:image"              content="https://www.solutiontoken.net/cdeef31a6668ff0be709df3a59d9ecd7.png" />-->
+
+
+
+
+
+
+
+
+
+
     <!-- Allow installing the app to the homescreen -->
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>React.js Boilerplate</title>
     <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
 
@@ -27,9 +39,37 @@
 
     <!--counter css-->
     <script src="https://use.fontawesome.com/3484dfabc2.js"></script>
-
+    <style>
+      .outer-loader {
+        display: table;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+      }
+      .middle-loader {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .inner-loader {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+      }
+      #app {
+      display: none;
+      }
+    </style>
   </head>
-  <body>
+  <body style="top: 0px; !important;">
+    <div id="body-inner">
+      <div id="outer-loader" class="outer-loader">
+        <div class="middle-loader">
+          <div class="inner-loader">
+            <img width="400px" src="images/gifs/loader.gif"/>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Display a message if JS has been disabled on the browser. -->
     <noscript>If you're seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JS</strong> to make this app work.</noscript>
 

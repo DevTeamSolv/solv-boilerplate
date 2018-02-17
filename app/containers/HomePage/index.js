@@ -397,7 +397,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           {/*{!this.state.paused && <img src={require("../../images/pause-coloured.png")}/>}*/}
           {/*{this.state.paused && <img src={require("../../images/110962-glowing-green-neon-icon-arrows-arrow3-right-solid-circle.png")}/>}*/}
           {/*</div>*/}
-          <img className="display-none" src={require("../../images/size-/wallpaper.png")}/>
+          <img className="display-none load-before" src={require("../../images/size-/wallpaper.png")}/>
+          <img className="display-none load-before" src={require("../../images/1.jpg")}/>
           <div className="content">
             <div className="page-content DWFullScreenPage_container" id="DWFullScreenPage1">
               <Element name="home" className="element">
