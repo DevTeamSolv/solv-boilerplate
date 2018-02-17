@@ -74,6 +74,46 @@
       display: none;
     }
   </style>
+
+
+  <script>
+    !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+        arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+
+    _gs('GSN-914873-K');
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    <!--<script>-->
+    <!--window.dataLayer = window.dataLayer || [];-->
+    <!--function gtag(){dataLayer.push(arguments)};-->
+    <!--gtag('js', new Date());-->
+
+    <!--gtag('config', 'UA-107392287-1');-->
+  </script>
+  <script>
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister()
+      } })
+  </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1812059432410671');
+    fbq('track', 'PageView');
+  </script>
 </head>
 <body style="top: 0px; !important;">
 <div id="body-inner">
@@ -95,35 +135,7 @@
 <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
 
 <script async src="https://www.youtube.com/iframe_api"></script>
-<!--<script>-->
-<!--function onYouTubeIframeAPIReady() {-->
-<!--var player;-->
-<!--player = new YT.Player('muteYouTubeVideoPlayer', {-->
-<!--videoId: 'fzLdtFAyFFA', // YouTube Video ID-->
-<!--width: 560,               // Player width (in px)-->
-<!--height: 316,              // Player height (in px)-->
-<!--playerVars: {-->
-<!--autoplay: 1,        // Auto-play the video on load-->
-<!--controls: 1,        // Show pause/play buttons in player-->
-<!--showinfo: 0,        // Hide the video title-->
-<!--modestbranding: 1,  // Hide the Youtube Logo-->
-<!--loop: 1,            // Run the video in a loop-->
-<!--fs: 0,              // Hide the full screen button-->
-<!--cc_load_policy: 0, // Hide closed captions-->
-<!--iv_load_policy: 3,  // Hide the Video Annotations-->
-<!--autohide: 0         // Hide video controls when playing-->
-<!--},-->
-<!--events: {-->
-<!--onReady: function(e) {-->
-<!--e.target.mute();-->
-<!--}-->
-<!--}-->
-<!--});-->
-<!--}-->
-
-<!--// Written by @labnol-->
-<!--</script>-->
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107392287-1"></script>
 
 </body>
 </html>
