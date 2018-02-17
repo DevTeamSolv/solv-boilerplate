@@ -17,7 +17,9 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import SignUpContainer from 'containers/SignUpContainer/Loadable';
 import Login from 'containers/Login/Loadable';
+import GoogleSearch from '../../components/GoogleSearch';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+
 
 export default function App() {
   return (
@@ -26,6 +28,7 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/signup" component={SignUpContainer} />
         <Route exact path="/signin" component={Login} />
+        <Route exact path="/google44434e3397bb25ac.html" component={GoogleSearch} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

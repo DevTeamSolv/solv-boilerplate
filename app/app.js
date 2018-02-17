@@ -43,14 +43,22 @@ import LanguageProvider from 'containers/LanguageProvider';
 import '!file-loader?name=[name].[ext]!./favico/favicon.ico';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
-import 'file-loader?name=[name].[ext]!./google44434e3397bb25ac.html';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-
-setTimeout(function () {
+if(!localStorage.getItem('already')) {
+  setTimeout(function () {
     document.getElementById('outer-loader').style.display = 'none';
     document.getElementById('app').style.display = 'block';
-}, 10000)
+    localStorage.setItem('already', true)
+  }, 10000)
+}
+else {
+  setTimeout(function () {
+    document.getElementById('outer-loader').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+  }, 3000)
+}
+
 
 
 import configureStore from './configureStore';

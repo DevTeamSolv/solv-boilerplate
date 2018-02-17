@@ -46,6 +46,12 @@ export class Login extends React.Component { // eslint-disable-line react/prefer
   }
 
   componentDidMount(){
+    setTimeout(function () {
+      document.getElementById('outer-loader').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+    }, 1000)
+
+
     // this.props.signUp();
     var h = $(document).height(); // returns height of HTML document
     var w = $(window).height(); // returns height of HTML document
