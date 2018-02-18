@@ -666,7 +666,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                               <a href="https://www.facebook.com/groups/251807885358730/" target="_blank" className="social_right_icon">
                                 <img title="Facebook Group" src={require("../../images/facebook.png")}/>
                               </a>
-                              <a href="javascript:;" onClick={this.handleContact.bind(this)} className="social_right_icon">
+                              <a href="https://discord.gg/AJtE9Zd" target="_blank" className="social_right_icon">
                                 <img title="Facebook Group" src={require("../../images/icons/if_discord_2308078.png")}/>
                               </a>
                             </div>

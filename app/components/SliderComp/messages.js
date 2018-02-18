@@ -26,7 +26,7 @@ export default defineMessages({
   },
   gamehead: {
     id: 'app.components.HomePage.gamehead',
-    defaultMessage: 'Stree QRed Game',
+    defaultMessage: 'Street QRed Game',
   },
   gamepara: {
     id: 'app.components.HomePage.gamepara',
