@@ -111,7 +111,7 @@ export default defineMessages({
   },
   b8p2: {
     id: 'app.components.UniqueSection.b8p2',
-    defaultMessage: " Here are some ways that users can earn an income from us: Using and playing our game and receiving tokens from the game, holding Solution Tokens in our staking wallet you will be generating KEY tokens every month, purchasing our water bottles or merchandise will give a chance to receive tokens and extra prizes.... Be sure not to forget the competitions that we run. Even just through participating in Operation Humanity, one special donor will be in a draw to collect a prize at the end of every quarter.",
+    defaultMessage: " Here are some ways that users can earn an income from us: Using and playing our game and receiving tokens from the game, holding Solution Tokens in our rewards wallet you will be generating KEY tokens every month, purchasing our water bottles or merchandise will give a chance to receive tokens and extra prizes.... Be sure not to forget the competitions that we run. Even just through participating in Operation Humanity, one special donor will be in a draw to collect a prize at the end of every quarter.",
   },
 
   b9h: {

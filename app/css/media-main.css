@@ -743,7 +743,8 @@ p {
               font-weight: bold;
               padding: 3px 5px; }
             .team-details .slider-continer .member-container .inner-member-container .links i {
-              padding: 5px 10px;
+              color: #1e8e1a !important;
+              padding: 2px 4px;
               cursor: pointer; }
             .team-details .slider-continer .member-container .inner-member-container .links a:hover {
               color: #1e8e1a;

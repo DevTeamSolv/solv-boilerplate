@@ -29,6 +29,7 @@ import './css/HoverFX.css';
 import './css/main.css';
 import "./containers/SignUpContainer/css/style.css";
 import "./containers/Login/css/style.css";
+import "./containers/Dashboard/css/style.css";
 
 import './css/media-main.css';
 import "./js/afterLoading";
@@ -45,19 +46,19 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-if(!localStorage.getItem('already')) {
+// if(!localStorage.getItem('already')) {
   setTimeout(function () {
     document.getElementById('outer-loader').style.display = 'none';
     document.getElementById('app').style.display = 'block';
     localStorage.setItem('already', true)
-  }, 10000)
-}
-else {
-  setTimeout(function () {
-    document.getElementById('outer-loader').style.display = 'none';
-    document.getElementById('app').style.display = 'block';
-  }, 3000)
-}
+  }, 10)
+// }
+// else {
+//   setTimeout(function () {
+//     document.getElementById('outer-loader').style.display = 'none';
+//     document.getElementById('app').style.display = 'block';
+//   }, 3000)
+// }
 
 
 
