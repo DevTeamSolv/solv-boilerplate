@@ -27,7 +27,7 @@ function* signUp() {
 
 
   try {
-    const res = yield call(axios.post.bind(axios, 'http://solutiontoken.net/api/users'), data);
+    const res = yield call(axios.post.bind(axios, 'https://solutiontoken.net/api/users'), data);
     // const res = yield call(axios.post.bind(axios, 'http://ec2-52-201-203-83.compute-1.amazonaws.com/api/users'), data);
     // const res = yield call(axios.post.bind(axios, 'http://localhost:8000/api/users'), data);
     console.log(res);

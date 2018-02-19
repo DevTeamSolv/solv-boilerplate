@@ -17,7 +17,7 @@ function* signIn() {
 
 
   try {
-    const res = yield call(axios.post.bind(axios, 'http://solutiontoken.net/api/login'), data);
+    const res = yield call(axios.post.bind(axios, 'https://solutiontoken.net/api/login'), data);
     // const res = yield call(axios.post.bind(axios, 'http://ec2-52-201-203-83.compute-1.amazonaws.com/api/login'), data);
     // const res = yield call(axios.post.bind(axios, 'http://localhost:8000/api/login'), data);
     console.log(res);

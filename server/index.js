@@ -39,7 +39,7 @@ app.use(bodyParser.json());
 
 //To prevent errors from Cross Origin Resource Sharing, we will set our headers to allow CORS with middleware like so:
 app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', 'http://solutiontoken.net');
+  res.setHeader('Access-Control-Allow-Origin', 'https://solutiontoken.net');
   // res.setHeader('Access-Control-Allow-Origin', 'http://ec2-52-201-203-83.compute-1.amazonaws.com');
   // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
