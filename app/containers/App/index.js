@@ -28,7 +28,7 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/signup" component={SignUpContainer} />
         <Route exact path="/signin" component={Login} />
-        {/*<Route exact path="/dashboard" component={Dashboard} />*/}
+        <Route exact path="/dashboard" component={Dashboard} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
