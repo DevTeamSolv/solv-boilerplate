@@ -31,7 +31,7 @@ function* signUp() {
     // const res = yield call(axios.post.bind(axios, 'http://ec2-52-201-203-83.compute-1.amazonaws.com/api/users'), data);
     // const res = yield call(axios.post.bind(axios, 'http://localhost:8000/api/users'), data);
     console.log(res);
-    if(res.data.message === "OK"){
+    if(res.data.message){
       if(res.data.success) {
         console.log("signup Successful")
         yield put(signUpResp("registered", false));
