@@ -21,7 +21,7 @@ function* signIn() {
     // const res = yield call(axios.post.bind(axios, 'http://ec2-52-201-203-83.compute-1.amazonaws.com/api/login'), data);
     // const res = yield call(axios.post.bind(axios, 'http://localhost:8000/api/login'), data);
     console.log(res);
-    if(res.statusText === "OK"){
+    if(res.data.message){
       if(res.data.success) {
         console.log(res.data, "signup Successful")
         yield put(signInResp("success", false, res.data.user.first_name));
