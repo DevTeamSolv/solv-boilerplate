@@ -33,7 +33,10 @@ import "./containers/Dashboard/css/style.css";
 
 import './css/media-main.css';
 import "./js/afterLoading";
-// Import root app
+
+// import jQuery from 'jquery/dist/jquery';
+
+// import "./js/jquery.initialize";// Import root app
 import App from 'containers/App';
 import { unregister } from './registerServiceWorker';
 // Import Language Provider
@@ -46,20 +49,40 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-// if(!localStorage.getItem('already')) {
+if(!localStorage.getItem('already')) {
   setTimeout(function () {
+    document.getElementById('body-inner').style.display = 'none';
     document.getElementById('outer-loader').style.display = 'none';
     document.getElementById('app').style.display = 'block';
     localStorage.setItem('already', true)
-  }, 10)
-// }
-// else {
-//   setTimeout(function () {
-//     document.getElementById('outer-loader').style.display = 'none';
-//     document.getElementById('app').style.display = 'block';
-//   }, 3000)
-// }
+  }, 10000)
+}
+else {
+  setTimeout(function () {
+    document.getElementById('body-inner').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+  }, 3000)
+}
 
+
+// $(function () {
+//   $.initialize("img#gif", function () {
+//
+//     var elem = $("img#gif");
+//     alert(elem)
+//
+//     console.log("Waiting to be loaded!", elem);
+//     alert("waiting")
+//     alert(elem)
+//     elem.on('load', function() {
+//       console.log("Loaded!");
+//       console.log(this.complete);
+//       alert('loading')
+//     });
+//     alert('loaded')
+//     console.log("Already loaded!");
+//   })
+// })
 
 
 import configureStore from './configureStore';

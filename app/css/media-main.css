@@ -433,10 +433,20 @@ p {
     display: none !important; }
 
   .mobile-roadmap {
-    display: none; } }
+    display: none; }
+
+  .inner-loader {
+    width: 400px !important; }
+    .inner-loader img {
+      width: 400px !important; } }
 @media only screen and (max-width: 767px) {
   .mobile-menu {
     display: block; }
+
+  .inner-loader {
+    width: 300px !important; }
+    .inner-loader img {
+      width: 300px !important; }
 
   .row_351 {
     padding-bottom: 160px; }
@@ -742,6 +752,8 @@ p {
               cursor: pointer;
               font-weight: bold;
               padding: 3px 5px; }
+            .team-details .slider-continer .member-container .inner-member-container .links path {
+              color: #1e8e1a !important; }
             .team-details .slider-continer .member-container .inner-member-container .links i {
               color: #1e8e1a !important;
               padding: 2px 4px;

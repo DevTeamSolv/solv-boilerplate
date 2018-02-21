@@ -2,6 +2,7 @@
 /* eslint consistent-return:0 */
 
 const express = require('express');
+const path = require('path');
 const logger = require('./logger');
 
 const argv = require('./argv');
@@ -255,6 +256,12 @@ setup(app, {
   publicPath: '/',
 });
 
+// Serve the index.html for all the other requests so that the
+// router in the javascript app can render the necessary components
+app.get('*',function(req,res){
+  res.sendFile(path.join(__dirname+'/build/index.html'));
+  //__dirname : It will resolve to your project folder.
+});
 // get the intended host and port number, use localhost and port 3000 if not provided
 const customHost = argv.host || process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host

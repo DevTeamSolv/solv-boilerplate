@@ -594,10 +594,22 @@ p {
   .mobile-roadmap {
     display: none;
   }
+  .inner-loader {
+    width: 400px !important;
+    img {
+      width: 400px !important;
+    }
+  }
 }
 @media only screen and (max-width: 767px) {
   .mobile-menu {
     display: block;
+  }
+  .inner-loader {
+    width: 300px !important;
+    img {
+      width: 300px !important;
+    }
   }
   .row_351 {
     padding-bottom: 160px;
@@ -981,6 +993,9 @@ p {
                 cursor: pointer;
                 font-weight: bold;
                 padding: 3px 5px;
+              }
+              path {
+                color: #1e8e1a !important;
               }
               i {
                 color: #1e8e1a !important;

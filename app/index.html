@@ -53,22 +53,32 @@
   <script src="https://use.fontawesome.com/3484dfabc2.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <style>
-    .outer-loader {
-      display: table;
-      position: fixed;
+    #body-inner {
       height: 100%;
-      width: 100%;
+    }
+    .outer-loader {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .middle-loader {
-      display: table-cell;
-      vertical-align: middle;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .inner-loader {
-      margin-left: auto;
-      margin-right: auto;
-      width: 400px;
+      /*height: 100%;*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+    }
+    .inner-loader img {
+      width: 300px;
     }
 
     #app {
@@ -121,7 +131,7 @@
   <div id="outer-loader" class="outer-loader">
     <div class="middle-loader">
       <div class="inner-loader">
-        <img width="400px" src="images/gifs/loader.gif"/>
+        <img src="images/gifs/loader.gif"/>
       </div>
     </div>
   </div>

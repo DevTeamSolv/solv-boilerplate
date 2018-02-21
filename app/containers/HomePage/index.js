@@ -22,7 +22,7 @@ import "slick-carousel/slick/slick-theme.css";
 import * as Scroll from 'react-scroll';
 import {changeLocale} from "../LanguageProvider/actions";
 import {makeSelectLocale} from "../LanguageProvider/selectors";
-import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/SOLUTION-TOKEN-White-Paper.pdf';
+import * as pdfFile from '!file-loader?name=[name].[ext]!../../images/gifs/Solution-Token-Whitepaper-V-1.0.pdf';
 
 let Link       = Scroll.Link;
 let Element    = Scroll.Element;
@@ -418,6 +418,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           <img className="display-none load-before" src={require("../../images/size-/wallpaper.png")}/>
           <img className="display-none load-before" src={require("../../images/1.jpg")}/>
           <img className="display-none load-before" src={require("../../images/banner.png")}/>
+          <img id="gif"  src={require("../../images/gifs/Nav-Bar_2-60fps-gif.gif")}/>
           <div className="content">
             <div className="page-content DWFullScreenPage_container" id="DWFullScreenPage1">
               <Element name="home" className="element">
