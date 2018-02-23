@@ -311,7 +311,9 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
         </div>
         <div className={!this.state.hide ? "scrolled animated-scroll fadeIn" : "row_51 animated-scroll"}>
           <div className="top-bar-outer">
+            <img className="logo" src={require("../../images/gifs/solv_logo_animated.gif")}/>
             <div className="empty-column">
+
             </div>
             <div className="nav-bar">
               <div className="inner-nav">
