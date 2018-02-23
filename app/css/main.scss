@@ -703,7 +703,9 @@ div.FM2_DWFullScreenPage1menu_container {
 }
 .row_51 {
   padding-top: 15px;
-  background-image: url("../images/gifs/Nav-Bar_2-60fps-gif.gif");
+  background: #04100c;
+
+  //background-image: url("../images/gifs/Nav-Bar_2-60fps-gif.gif");
   background-size: cover;
   height: 93px;
   background-repeat: no-repeat;
@@ -852,7 +854,8 @@ div.FM2_DWFullScreenPage1menu_container {
 .scrolled {
   height: 69px;
   padding-top: 5px;
-  background-image: url("../images/gifs/Nav-Bar_2-60fps-gif.gif");
+  background: #04100c;
+  //background-image: url("../images/gifs/Nav-Bar_2-60fps-gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all .2s linear 0s;
