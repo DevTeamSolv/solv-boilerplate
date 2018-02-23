@@ -20,7 +20,7 @@
     background-color: rgba(184, 187, 183, 0.18); }
 
 .sign-up {
-  background: #04100c;
+  background-image: url("../../../images/wallpaperbg.png");
   width: 100%;
   padding: 100px;
   background-size: cover;
