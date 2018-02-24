@@ -2,17 +2,8 @@
   .scrolled, .row_51 {
     background-position: 0px 41%; } }
 @media only screen and (min-width: 1600px) {
-  .scrolled {
-    height: 81px;
-    padding-top: 12px; } }
-@media only screen and (min-width: 1600px) {
-  .scrolled {
-    height: 91px;
-    padding-top: 15px; }
-
-  .row_51 {
-    height: 99px;
-    padding-top: 17px; } }
+  .scrolled, .row_51 {
+    height: 70px; } }
 @media only screen and (max-width: 1600px) {
   .team-details .team-container {
     width: 100%; } }
@@ -278,7 +269,7 @@ p {
     margin-right: -50px; }
 
   .nav-bar {
-    padding-left: 80px !important;
+    padding-left: 0px !important;
     flex-grow: 1 !important; }
 
   .column_281 {
@@ -301,10 +292,8 @@ p {
   video {
     margin-top: 68px; }
 
-  .row_51 {
-    padding-top: 15px; }
-    .row_51 .top-bar-outer .empty-column {
-      flex-grow: 1; }
+  .row_51 .top-bar-outer .empty-column {
+    flex-grow: 1; }
 
   .scrolled .top-bar-outer .empty-column {
     flex-grow: 1; }
@@ -338,8 +327,9 @@ p {
 
   .scrolled, .row_51 {
     height: 68px;
-    min-height: 0px;
-    padding-top: 5px; }
+    min-height: 0px; }
+    .scrolled img.logo, .row_51 img.logo {
+      margin-left: 10px; }
     .scrolled .column_26, .scrolled .column_27, .scrolled .column_25, .row_51 .column_26, .row_51 .column_27, .row_51 .column_25 {
       min-height: 0px;
       height: auto; }
@@ -587,12 +577,19 @@ p {
     .mobile-view img.image-field1 {
       width: 65%; }
 
-  .row_51 .column_25, .scrolled .column_25 {
-    width: 15%; }
-  .row_51 .column_26, .scrolled .column_26 {
-    width: 60%; }
-  .row_51 .column_26 .navigation, .row_51 .column_27, .scrolled .column_26 .navigation, .scrolled .column_27 {
-    display: none; }
+  .row_51, .scrolled {
+    display: block;
+    padding-top: 9px; }
+    .row_51 img.logo, .scrolled img.logo {
+      float: left; }
+    .row_51 .mobile-menu, .scrolled .mobile-menu {
+      float: right; }
+    .row_51 .column_25, .scrolled .column_25 {
+      width: 15%; }
+    .row_51 .column_26, .scrolled .column_26 {
+      width: 60%; }
+    .row_51 .column_26 .navigation, .row_51 .column_27, .scrolled .column_26 .navigation, .scrolled .column_27 {
+      display: none; }
 
   .column_46 {
     width: 100%;
@@ -985,7 +982,7 @@ p {
       font-size: 29px; }
 
   .row_51 {
-    height: 82px; }
+    height: 69px; }
     .row_51 .column_26 {
       display: none; }
     .row_51 #nav-icon4 {
@@ -1213,7 +1210,7 @@ p {
     padding-bottom: 140px; }
 
   .row_51 {
-    height: 82px; }
+    height: 70px; }
     .row_51 .column_26 {
       display: none; }
     .row_51 #nav-icon4 {
@@ -1318,7 +1315,7 @@ p {
     top: 60% !important; }
 
   .row_51 {
-    height: 82px; }
+    height: 70px; }
     .row_51 .column_26 {
       display: none; }
     .row_51 #nav-icon4 {

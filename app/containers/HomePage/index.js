@@ -310,8 +310,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           <p className={this.props.locale === "ja" ? "active" : "" } onClick={this.changeLocale.bind(this, "ja")}>日本語</p>
         </div>
         <div className={!this.state.hide ? "scrolled animated-scroll fadeIn" : "row_51 animated-scroll"}>
+          <img className="logo" src={require("../../images/gifs/solv_logo_animated.gif")}/>
           <div className="top-bar-outer">
-            <img className="logo" src={require("../../images/gifs/solv_logo_animated.gif")}/>
             <div className="empty-column">
 
             </div>
