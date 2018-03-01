@@ -268,6 +268,7 @@ button.wallet p {
 .column_46 {
   //height: auto !important;
 }
+
 .row_38 {
   //background-image: url("../js/includes/DWFullScreenPage/DWFullScreenPage1/tokenbg.png");
   background-image: url("../images/1.jpg");
@@ -1566,7 +1567,7 @@ video {
   stroke:rgba(90,223,47,1);
 }
 .svg-style {
-  display: block;
+  display: none;
   width: 90px;
   height: 90px;
   transform: translate(0px, 0%) rotate(270deg) scale(1.5,1.5);

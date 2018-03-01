@@ -402,7 +402,16 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
         {/*</div>*/}
         <Element name="video" className="element">
           {/*<div id="muteYouTubeVideoPlayer"></div>*/}
-          <img src={require("../../images/Website counter bg-01.png")}/>
+          <div className="counterbg">
+            <div className="countDown">
+              <CountdownTimer endDate={moment('20/3/2018 12:00:00', 'DD/MM/YYYY hh:mm:ss')}/>
+            </div>
+
+            <div className="bgbutton">
+              <LINK to='signup'><FormattedMessage {...messages.signUp}/></LINK>
+            </div>
+
+          </div>
 
 
 

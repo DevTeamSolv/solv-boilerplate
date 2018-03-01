@@ -114,7 +114,7 @@ class CountdownTimer extends React.Component { // eslint-disable-line react/pref
       display: 'flex',
       justifyContent: 'center',
       minWidth: 'inherit',
-      color: '#51d64b',
+      color: '#7fc241',
       fontWeight: '500',
       marginTop: '41px'
     }
@@ -124,7 +124,7 @@ class CountdownTimer extends React.Component { // eslint-disable-line react/pref
       alignItems: 'center',
       minWidth: '100px',
       minHeight: '100px',
-      backgroundColor: '#156112',
+      backgroundColor: '#7fc241',
       borderRadius: '100%',
       width: '120px',
       height: '120px'

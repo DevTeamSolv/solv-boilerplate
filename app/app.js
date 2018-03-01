@@ -33,6 +33,7 @@ import "./containers/Dashboard/css/style.css";
 
 import './css/media-main.css';
 import "./js/afterLoading";
+import "./css/nemstyle.css";
 
 // import jQuery from 'jquery/dist/jquery';
 
