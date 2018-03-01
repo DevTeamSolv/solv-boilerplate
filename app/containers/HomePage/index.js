@@ -401,8 +401,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
         </div>
         {/*</div>*/}
         <Element name="video" className="element">
-          <div id="muteYouTubeVideoPlayer"></div>
-
+          {/*<div id="muteYouTubeVideoPlayer"></div>*/}
+          <img src={require("../../images/Website counter bg-01.png")}/>
 
 
 
@@ -413,10 +413,10 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           {/*Your browser does not support HTML5 video.*/}
           {/*</video>*/}
           <AudioPlayer />
-          <div onClick={this.handleVideo.bind(this)} className="audio-icon">
-          {!this.state.paused && <img src={require("../../images/icons8-audio-100.png")}/>}
-          {this.state.paused && <img src={require("../../images/icons8-no-audio-100.png")}/>}
-          </div>
+          {/*<div onClick={this.handleVideo.bind(this)} className="audio-icon">*/}
+            {/*{!this.state.paused && <img src={require("../../images/icons8-audio-100.png")}/>}*/}
+            {/*{this.state.paused && <img src={require("../../images/icons8-no-audio-100.png")}/>}*/}
+          {/*</div>*/}
           <img className="display-none load-before" src={require("../../images/size-/wallpaper.png")}/>
           <img className="display-none load-before" src={require("../../images/1.jpg")}/>
           <img className="display-none load-before" src={require("../../images/banner.png")}/>
@@ -439,9 +439,9 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                         {/*Here at Solution Token, the benefit of our users - who we hope will span across all kinds of humanity - is our priority. We hope to earn your support by sharing our vision: what we are doing, why we are doing it, and how we will accomplish it. For more technical details and hard numbers to help you make the most well-informed decision possible, you can also explore our interactive whitepaper.<br/>*/}
                         {/*<ReactRotatingText items={['A TOKEN FOR HUMANITY']} />*/}
                       </p>
-                      <h4 className="pre-sale-news">
-                        <FormattedMessage {...messages.homepresale}/>
-                      </h4>
+                      {/*<h4 className="pre-sale-news">*/}
+                        {/*<FormattedMessage {...messages.homepresale}/>*/}
+                      {/*</h4>*/}
                     </div>
 
                     {/*<div id="countdown_with_background_v1">*/}
@@ -452,9 +452,9 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                     {/*</li>*/}
                     {/*</ul>*/}
                     {/*</div>*/}
-                    <div className="countDown">
-                      <CountdownTimer endDate={moment('20/3/2018 12:00:00', 'DD/MM/YYYY hh:mm:ss')}/>
-                    </div>
+                    {/*<div className="countDown">*/}
+                      {/*<CountdownTimer endDate={moment('20/3/2018 12:00:00', 'DD/MM/YYYY hh:mm:ss')}/>*/}
+                    {/*</div>*/}
                   </div>
                 </div>
               </Element>
