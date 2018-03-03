@@ -49,20 +49,23 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-if(!localStorage.getItem('already')) {
-  setTimeout(function () {
-    document.getElementById('body-inner').style.display = 'none';
-    document.getElementById('outer-loader').style.display = 'none';
-    document.getElementById('app').style.display = 'block';
-    localStorage.setItem('already', true)
-  }, 10000)
-}
-else {
-  setTimeout(function () {
-    document.getElementById('body-inner').style.display = 'none';
-    document.getElementById('app').style.display = 'block';
-  }, 3000)
-}
+
+document.getElementById('body-inner').style.display = 'none';
+document.getElementById('app').style.display = 'block';
+// if(!localStorage.getItem('already')) {
+//   setTimeout(function () {
+//     document.getElementById('body-inner').style.display = 'none';
+//     document.getElementById('outer-loader').style.display = 'none';
+//     document.getElementById('app').style.display = 'block';
+//     localStorage.setItem('already', true)
+//   }, 10000)
+// }
+// else {
+//   setTimeout(function () {
+//     document.getElementById('body-inner').style.display = 'none';
+//     document.getElementById('app').style.display = 'block';
+//   }, 3000)
+// }
 
 
 // $(function () {

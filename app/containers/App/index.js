@@ -17,6 +17,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import SignUpContainer from 'containers/SignUpContainer/Loadable';
 import Login from 'containers/Login/Loadable';
+import Maintainence from '../../components/Maintainence/Loadable';
 import Dashboard from 'containers/Dashboard/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
@@ -25,7 +26,7 @@ export default function App() {
   return (
     <div>
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={Maintainence} />
         <Route exact path="/signup" component={SignUpContainer} />
         <Route exact path="/signin" component={Login} />
         {/*<Route exact path="/dashboard" component={Dashboard} />*/}
