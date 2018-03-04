@@ -893,6 +893,19 @@ p {
     .row_51 #nav-icon4 span:nth-child(3) {
       top: 30px; }
 
+  .maintain .container {
+    flex: 0.72; }
+    .maintain .container .buttons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center !important;
+      padding-left: 0px !important; }
+      .maintain .container .buttons .row {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; }
+
   video {
     width: 100%;
     margin-top: 66px; }
