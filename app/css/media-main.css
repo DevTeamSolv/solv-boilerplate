@@ -259,6 +259,46 @@ p {
   .row_30 {
     height: 800px; }
 
+  .maintain {
+    background-image: url("../images/size-/mobile-maintainence.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; }
+    .maintain .container {
+      width: 70%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 0.7; }
+      .maintain .container .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px; }
+      .maintain .container a {
+        padding: 10px 20px;
+        background-color: #d4d3d3;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 18px; }
+      .maintain .container a:hover {
+        background-color: #e6e6e6; }
+      .maintain .container a.link {
+        padding: 0px;
+        width: auto;
+        height: auto;
+        background-color: transparent; }
+        .maintain .container a.link .fa-facebook-square path {
+          fill: #3b5998; }
+        .maintain .container a.link .fa-telegram path {
+          fill: #0088cc; }
+
   .skiptranslate.goog-te-gadget select {
     padding: 15px;
     width: 94px;
@@ -432,6 +472,14 @@ p {
 @media only screen and (max-width: 767px) {
   .mobile-menu {
     display: block; }
+
+  .maintain {
+    background-image: url("../images/size-/mobile-maintainence.png"); }
+    .maintain .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center !important;
+      padding-left: 0px !important; }
 
   .inner-loader {
     width: 300px !important; }
@@ -1076,6 +1124,21 @@ p {
 @media only screen and (max-width: 434px) {
   .row_58 .mobile-view img.image-field1 {
     width: 100%; }
+
+  .maintain {
+    background-image: url("../images/size-/mobile-maintainence.png"); }
+    .maintain .container {
+      flex: 0.72; }
+    .maintain .buttons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center !important;
+      padding-left: 0px !important; }
+      .maintain .buttons .row {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; }
 
   #community .skylight-dialog {
     height: 300px !important;

@@ -371,6 +371,58 @@ p {
   .row_30 {
     height: 800px;
   }
+  .maintain {
+    background-image: url("../images/size-/mobile-maintainence.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .container {
+      width: 70%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 0.7;
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+      }
+      a {
+        padding: 10px 20px;
+        background-color: #d4d3d3;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      a:hover {
+        background-color: #e6e6e6;
+      }
+      a.link {
+        padding: 0px;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        .fa-facebook-square {
+          path{
+            fill: #3b5998;
+          }
+        }
+        .fa-telegram {
+          path{
+            fill: #0088cc;
+          }
+        }
+      }
+
+    }
+  }
   .skiptranslate.goog-te-gadget select {
     padding: 15px;
     width: 94px;
@@ -609,6 +661,16 @@ p {
 @media only screen and (max-width: 767px) {
   .mobile-menu {
     display: block;
+  }
+
+  .maintain {
+    background-image: url("../images/size-/mobile-maintainence.png");
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center !important;
+      padding-left: 0px !important;
+    }
   }
   .inner-loader {
     width: 300px !important;
@@ -1446,6 +1508,25 @@ p {
     width: 100%;
   }
 
+
+  .maintain {
+    background-image: url("../images/size-/mobile-maintainence.png");
+    .container {
+      flex: 0.72;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center !important;
+      padding-left: 0px !important;
+      .row {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+  }
   #community {
     .skylight-dialog {
       height: 300px !important;
