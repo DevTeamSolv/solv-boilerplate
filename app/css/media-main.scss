@@ -391,35 +391,6 @@ p {
         justify-content: center;
         padding-left: 0px;
       }
-      a {
-        padding: 10px 20px;
-        background-color: #d4d3d3;
-        margin-left: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      a:hover {
-        background-color: #e6e6e6;
-      }
-      a.link {
-        padding: 0px;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        .fa-facebook-square {
-          path{
-            fill: #3b5998;
-          }
-        }
-        .fa-telegram {
-          path{
-            fill: #0088cc;
-          }
-        }
-      }
 
     }
   }

@@ -32,18 +32,19 @@
       padding-left: 100px; }
     .maintain .container a {
       padding: 10px 20px;
-      background-color: #d4d3d3;
+      border: 2px solid #d4d3d3;
       margin-left: 10px;
-      border-radius: 5px;
+      border-radius: 30px;
       cursor: pointer;
       font-weight: 500;
       text-decoration: none;
       font-size: 18px; }
     .maintain .container a:hover {
-      background-color: #e6e6e6; }
+      background-color: #e6e6e62e; }
     .maintain .container a.link {
       padding: 0px;
       width: auto;
+      border: none;
       height: auto;
       background-color: transparent; }
       .maintain .container a.link .fa-facebook-square path {
