@@ -874,7 +874,7 @@ p {
       top: 30px; }
 
   .maintain .container {
-    flex: 0.72; }
+    flex: 0.82; }
     .maintain .container .buttons {
       display: flex;
       align-items: center;
@@ -1121,7 +1121,7 @@ p {
   .maintain {
     background-image: url("../images/size-/mobile-maintainence.png"); }
     .maintain .container {
-      flex: 0.72; }
+      flex: 0.82; }
     .maintain .buttons {
       display: flex;
       align-items: center;
