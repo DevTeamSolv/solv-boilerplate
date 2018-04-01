@@ -954,34 +954,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                       </div>
 
                       <div className="members-row">
-                        <div className="member-container opacity-zero">
-                          <div className="inner-member-container">
-                            <img src={require("../../images/team/size-/James fawk.jpg")}/>
-                            <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
-                              <a href="mailto:j.fawke@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
-                            </div>
-                            <hr/>
-                            <div className="info">
-                              <p className="name">James Fawke</p>
-                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="member-container">
-                          <div className="inner-member-container">
-                            <img src={require("../../images/team/size-/James fawk.jpg")}/>
-                            <div className="links">
-                              <a onClick={this.handleDetails.bind(this, "james")}><FormattedMessage {...messages.bio}/></a>
-                              <a href="mailto:j.fawke@solutiontoken.net"><i className="fa fa-envelope" aria-hidden="true"></i></a>
-                            </div>
-                            <hr/>
-                            <div className="info">
-                              <p className="name">James Fawke</p>
-                              <p className="designation"><FormattedMessage {...messages.jamesDesg}/></p>
-                            </div>
-                          </div>
-                        </div>
+                        
                         <div className="member-container">
                           <div className="inner-member-container">
                             <img src={require("../../images/team/size-/Arik.jpg")}/>
