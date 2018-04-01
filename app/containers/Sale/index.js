@@ -55,10 +55,10 @@ export class Sale extends React.Component { // eslint-disable-line react/prefer-
     console.log(this.state.ethPrice)
   }
   onChangeValue(evt){
-    var x = 100-evt;
     $("#eth1").attr('offset', x + '%')
-    $("#solv1").attr('offset', x + '%')
     $("#eth2").attr('offset', x + '%')
+    var x = 100-evt;
+    $("#solv1").attr('offset', x + '%')
     $("#solv2").attr('offset', x + '%')
     // console.log($("#eth1").attr('offset'))
     this.setState({

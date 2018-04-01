@@ -19,7 +19,6 @@ var Comment = require('../model/comments');
 var User = require('../model/user');
 var Referral = require('../model/refferal');
 var secrets = require('../secrets_template');
-var randomstring = require("randomstring");
 
 var router = express.Router();
 
@@ -40,9 +39,10 @@ app.use(bodyParser.json());
 
 //To prevent errors from Cross Origin Resource Sharing, we will set our headers to allow CORS with middleware like so:
 app.use(function(req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', 'https://www.solutiontoken.net');
+  // res.setHeader('Access-Control-Allow-Origin', 'https://www.solutiontoken.net');
   // res.setHeader('Access-Control-Allow-Origin', 'http://ec2-52-201-203-83.compute-1.amazonaws.com');
   // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
@@ -121,16 +121,16 @@ router.route('/login')
 //adding the /comments route to our /api router
 router.route('/users')
 //retrieve all comments from the database
-//   .get(function(req, res) {
-//     // console.log('get in ')
-//     //looks at our Comment Schema
-//     User.find(function(err, users) {
-//       if (err)
-//         res.send(err);
-//       //responds with a json object of our database comments.
-//       res.json(users)
-//     });
-//   })
+  .get(function(req, res) {
+    // console.log('get in ')
+    //looks at our Comment Schema
+    User.find(function(err, users) {
+      if (err)
+        res.send(err);
+      //responds with a json object of our database comments.
+      res.json(users)
+    });
+  })
   //post new comment to the database
   .post(function(req, res) {
     // console.log(req.body)
@@ -245,43 +245,43 @@ router.route('/users')
 // app.use('/api', myApi);
 // const PORT = '8000'
 app.use('/api', router);
-// app.listen(port, function() {
-//   console.log(`api running on port ${PORT}`);
-// });
+app.listen(port, function() {
+  console.log(`api running on port ${port}`);
+});
 
 
 // In production we need to pass these values in instead of relying on webpack
-setup(app, {
-  outputPath: resolve(process.cwd(), 'build'),
-  publicPath: '/',
-});
+// setup(app, {
+//   outputPath: resolve(process.cwd(), 'build'),
+//   publicPath: '/',
+// });
 
 // Serve the index.html for all the other requests so that the
 // router in the javascript app can render the necessary components
-app.get('*',function(req,res){
-  res.sendFile(path.join(__dirname+'/build/index.html'));
-  //__dirname : It will resolve to your project folder.
-});
+// app.get('*',function(req,res){
+//   res.sendFile(path.join(__dirname+'/build/index.html'));
+//   //__dirname : It will resolve to your project folder.
+// });
 // get the intended host and port number, use localhost and port 3000 if not provided
-const customHost = argv.host || process.env.HOST;
-const host = customHost || null; // Let http.Server use its default IPv6/4 host
-const prettyHost = customHost || 'localhost';
+// const customHost = argv.host || process.env.HOST;
+// const host = customHost || null; // Let http.Server use its default IPv6/4 host
+// const prettyHost = customHost || 'localhost';
 
 // Start your app.
-app.listen(port, host, (err) => {
-  if (err) {
-    return logger.error(err.message);
-  }
-  // Connect to ngrok in dev mode
-  if (ngrok) {
-    ngrok.connect(port, (innerErr, url) => {
-      if (innerErr) {
-        return logger.error(innerErr);
-      }
-
-      logger.appStarted(port, prettyHost, url);
-    });
-  } else {
-    logger.appStarted(port, prettyHost);
-  }
-});
+// app.listen(port, host, (err) => {
+//   if (err) {
+//     return logger.error(err.message);
+//   }
+//   // Connect to ngrok in dev mode
+//   if (ngrok) {
+//     ngrok.connect(port, (innerErr, url) => {
+//       if (innerErr) {
+//         return logger.error(innerErr);
+//       }
+//
+//       logger.appStarted(port, prettyHost, url);
+//     });
+//   } else {
+//     logger.appStarted(port, prettyHost);
+//   }
+// });
