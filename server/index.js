@@ -12,19 +12,30 @@ const isDev = process.env.NODE_ENV !== 'production';
 const ngrok = (isDev && process.env.ENABLE_TUNNEL) || argv.tunnel ? require('ngrok') : false;
 const resolve = require('path').resolve;
 const app = express();
+var smtpTransport = require('nodemailer-smtp-transport');
+
+var handlebars = require('handlebars');
+var fs = require('fs');
 
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var Comment = require('../model/comments');
 var User = require('../model/user');
+var Email = require('../model/email');
 var Referral = require('../model/refferal');
 var secrets = require('../secrets_template');
 
 var router = express.Router();
+var nodemailer = require('nodemailer');
 
 
-
-
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'tauqeerhassan68@gmail.com',
+    pass: 'hassankhokhar'
+  }
+});
 //set our port to either a predetermined port number if you have set it up, or 3001
 
 //db config -- set your URI from mLab in secrets.js
@@ -116,7 +127,58 @@ router.route('/login')
   });
 
 
+router.route('/contact')
+  .post(function (req, res) {
+    var email = new Email();
+    console.log(email);
+    console.log(req.body);
 
+    var readHTMLFile = function(path, callback) {
+      fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
+        if (err) {
+          throw err;
+          callback(err);
+        }
+        else {
+          callback(null, html);
+        }
+      });
+    };
+
+    readHTMLFile(__dirname + '/mail.html', function(err, html) {
+      var template = handlebars.compile(html);
+      var replacements = {
+        username: req.body.name,
+        message: req.body.message,
+        email: req.body.email
+      };
+      var htmlToSend = template(replacements);
+      console.log(htmlToSend)
+
+      var mailOptions = {
+        from: 'tauqeerhassan68@gmail.com', // sender address
+        to: 'tauqeerhassan66@gmail.com', // list of receivers
+        subject : req.body.subject,
+        html : htmlToSend
+
+      };
+      transporter.sendMail(mailOptions, function (err, info) {
+        if(err){
+          res.json({message: 'err', success: false})
+          console.log(err)
+        }
+        else {
+          res.json({message: 'Sent', success: true})
+          console.log(info)
+        }
+      });
+    });
+
+
+
+
+        // res.json({message: 'Sent', success: true})
+  })
 
 //adding the /comments route to our /api router
 router.route('/users')
@@ -240,6 +302,8 @@ router.route('/users')
       }
     });
   });
+
+
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
 // app.use('/api', myApi);
