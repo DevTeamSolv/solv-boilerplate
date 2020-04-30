@@ -135,7 +135,7 @@
     "intl": "1.2.5",
     "invariant": "2.2.2",
     "ip": "1.1.5",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery-scrollify": "^1.0.19",
     "lodash": "4.17.4",
     "marked": "^0.3.12",
