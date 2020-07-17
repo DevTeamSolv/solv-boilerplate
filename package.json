@@ -137,7 +137,7 @@
     "ip": "1.1.5",
     "jquery": "^3.3.1",
     "jquery-scrollify": "^1.0.19",
-    "lodash": "4.17.4",
+    "lodash": "4.17.19",
     "marked": "^0.3.12",
     "minimist": "1.2.0",
     "moment": "^2.20.1",
