@@ -138,7 +138,7 @@
     "jquery": "^3.3.1",
     "jquery-scrollify": "^1.0.19",
     "lodash": "4.17.4",
-    "marked": "^0.3.12",
+    "marked": "^4.0.10",
     "minimist": "1.2.0",
     "moment": "^2.20.1",
     "mongoose": "^5.0.4",
